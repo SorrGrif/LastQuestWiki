@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 
 
 /**
@@ -26,6 +28,11 @@ public class contactFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    private EditText fromTxt;
+    private EditText subjectTxt;
+    private EditText bodyTxt;
+
 
     private OnFragmentInteractionListener mListener;
 
@@ -64,7 +71,32 @@ public class contactFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_contact, container, false);
+        View view = inflater.inflate(R.layout.fragment_contact, container, false);
+        fromTxt = (EditText) view.findViewById(R.id.fromTxtField);
+        subjectTxt = (EditText) view.findViewById(R.id.subjectTxtField);
+        bodyTxt = (EditText) view.findViewById(R.id.bodyTxtField);
+
+
+
+        Button sendBtn = (Button) view.findViewById(R.id.emailButton);
+
+        sendBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String from = fromTxt.getText().toString();
+                String subject = subjectTxt.getText().toString();
+                String body = bodyTxt.getText().toString();
+                sendEmail(from, subject, body);
+            }
+        });
+
+        fromTxt.setHint("From");
+        subjectTxt.setHint("Subject");
+        bodyTxt.setHint("Message");
+
+
+
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -104,5 +136,10 @@ public class contactFragment extends Fragment {
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
+    }
+
+    private void sendEmail(String from, String subject, String body)
+    {
+        
     }
 }

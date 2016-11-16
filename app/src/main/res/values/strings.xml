@@ -6,6 +6,8 @@
 
     <string name="action_settings">Settings</string>
 
+    <string name="underline"><u>\t\t\t\t\t\t\t\t\ttest<strike>\t\t\talso test\t\t</strike>\t\t\t\t\t\t\t</u></string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
