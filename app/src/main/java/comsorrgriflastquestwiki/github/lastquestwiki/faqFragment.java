@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -28,7 +30,7 @@ public class faqFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    TextView faqFragment;
+    TextView faqFragmentTextView;
     ListView list;
 
     private OnFragmentInteractionListener mListener;
@@ -69,6 +71,11 @@ public class faqFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_faq, container, false);
+        faqFragmentTextView = (TextView) view.findViewById(R.id.answer);
+        list = (ListView) view.findViewById(R.id.answers);
+        ArrayList<FaqItem> FaqItemList = new ArrayList<>();
+        FaqItemList.add(new FaqItem("How do I solve this?", "Move to the right and spin 180 degrees"));
+
         return view;
     }
 
