@@ -7,6 +7,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
+import android.widget.TextView;
+
+import java.util.ArrayList;
 
 
 /**
@@ -26,6 +30,8 @@ public class faqFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    TextView faqFragmentTextView;
+    ListView list;
 
     private OnFragmentInteractionListener mListener;
 
@@ -64,7 +70,13 @@ public class faqFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_faq, container, false);
+        View view = inflater.inflate(R.layout.fragment_faq, container, false);
+        faqFragmentTextView = (TextView) view.findViewById(R.id.answer);
+        list = (ListView) view.findViewById(R.id.answers);
+        ArrayList<FaqItem> FaqItemList = new ArrayList<>();
+        FaqItemList.add(new FaqItem("How do I solve this?", "Move to the right and spin 180 degrees"));
+
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
