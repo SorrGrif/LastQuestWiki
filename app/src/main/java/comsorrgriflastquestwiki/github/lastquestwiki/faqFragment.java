@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -74,15 +75,24 @@ public class faqFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_faq, container, false);
         faqFragmentTextView = (TextView) view.findViewById(R.id.answer);
         list = (ListView) view.findViewById(R.id.answers);
-        ArrayList<FaqItem> FaqItemList = new ArrayList<>();
+        final ArrayList<FaqItem> FaqItemList = new ArrayList<>();
         FaqItemList.add(new FaqItem("How do I solve this?", "Move to the right and spin 180 degrees"));
         FaqItemList.add(new FaqItem("How do I equip my weapons?", "Go to the menu option and choose weapons."));
         FaqItemList.add(new FaqItem("How do I change classes", "You are only allowed to start with a default class, however once you reach lvl25 you will unlock a new class"));
         FaqItemList.add(new FaqItem("Can I change my name?", "You can only keep the name you chose when you started."));
 
 
-        ArrayAdapter adapter = new 
+        ArrayAdapter adapter = new ArrayAdapter(getContext(), android.R.layout.simple_list_item_1, FaqItemList);
+        CustomAdapter adapter1 = new CustomAdapter(getContext(), FaqItemList);
+        list.setAdapter(adapter1);
+        list.setOnClickListener(new AdapterView.OnItemClickListener(){
 
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+               FaqItem item = (FaqItem) list.getItemAtPosition(position);
+                faqFragmentTextView.setText(FaqItem);
+            }
+        });
 
         return view;
     }
