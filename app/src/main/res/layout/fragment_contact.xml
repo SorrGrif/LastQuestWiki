@@ -19,14 +19,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:id="@+id/textView5"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/underline" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Send us an Email"
         android:id="@+id/textView4"
         android:layout_gravity="center_horizontal" />
@@ -54,17 +46,39 @@
         android:layout_marginLeft="40dp" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Send Email"
         android:id="@+id/emailButton"
-        android:layout_gravity="center_horizontal" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:id="@+id/textView2"
         android:layout_gravity="center_horizontal"
-        android:text="@string/underline" />
+        android:layout_marginLeft="@dimen/buttonPadding"
+        android:layout_marginRight="@dimen/buttonPadding" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="add to contact"
+        android:id="@+id/contactButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/buttonPadding"
+        android:layout_marginRight="@dimen/buttonPadding" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="visit our website"
+        android:id="@+id/websiteButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/buttonPadding"
+        android:layout_marginRight="@dimen/buttonPadding" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="View on map"
+        android:id="@+id/mapButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/buttonPadding"
+        android:layout_marginRight="@dimen/buttonPadding" />
+
 </LinearLayout>
