@@ -1,6 +1,7 @@
 package comsorrgriflastquestwiki.github.lastquestwiki;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -75,36 +76,62 @@ public class contactFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_contact, container, false);
+
+        //init the shake anim
         shake = AnimationUtils.loadAnimation(getActivity(), R.anim.shake);
+
+        //init all textfields from contact form
         fromTxt = (EditText) view.findViewById(R.id.fromTxtField);
         subjectTxt = (EditText) view.findViewById(R.id.subjectTxtField);
         bodyTxt = (EditText) view.findViewById(R.id.bodyTxtField);
+
+        //setting hints for the textfields so end user knows what to enter
         fromTxt.setHint("From");
         subjectTxt.setHint("Subject");
         bodyTxt.setHint("Message");
 
-
+        //init the send email button
         Button sendBtn = (Button) view.findViewById(R.id.emailButton);
 
+        //create an action when send email button is clicked
         sendBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //get the string entered from the from textfield
                 String from = fromTxt.getText().toString();
+
+                //declare booleans hasAt and hasDot to validate it is
+                //a valid email address
+                //eg. youremail@somesite.com <- valid email
+                //    youremailsomesite.com <- not valid
                 boolean hasAt = false;
                 boolean hasDot = false;
+
+                //substring through the string to find the @ and .
+                //and set hasAt and hasDot to true if found
                 for(int i = 0; i < from.length(); i++) {
                     if (from.substring(i, i + 1).equals("@")) hasAt = true;
                     if (from.substring(i, i + 1).equals(".")) hasDot = true;
                 }
 
-                if(!hasAt || !hasDot) fromTxt.startAnimation(shake);
-                else;
+                //if either hasAt or hasDot is false shake the textifeld to notify
+                //the email address was incorrect
+                if(!hasAt || !hasDot)
+                {
+                    fromTxt.startAnimation(shake);
+                    fromTxt.setBackgroundColor(Color.parseColor("#FF0000"));
+                }
+                else
+                {
+                    //get text from the subject field and body field
+                    String subject = subjectTxt.getText().toString();
+                    String body = bodyTxt.getText().toString();
+
+                    //run the sendEmail function
+                    sendEmail(from, subject, body);
+                }
 
 
-
-                String subject = subjectTxt.getText().toString();
-                String body = bodyTxt.getText().toString();
-                sendEmail(from, subject, body);
             }
         });
 
