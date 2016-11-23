@@ -7,6 +7,12 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.TextView;
+
+import java.util.ArrayList;
 
 
 /**
@@ -26,6 +32,8 @@ public class faqFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    TextView faqFragmentTextView;
+    ListView list;
 
     private OnFragmentInteractionListener mListener;
 
@@ -64,8 +72,53 @@ public class faqFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_faq, container, false);
+        View view = inflater.inflate(R.layout.fragment_faq, container, false);
+        faqFragmentTextView = (TextView) view.findViewById(R.id.answer);
+        list = (ListView) view.findViewById(R.id.answers);
+        final ArrayList<FaqItem> FaqItemList = new ArrayList<>();
+        FaqItemList.add(new FaqItem("How do I solve this?", "Move to the right and spin 180 degrees"));
+        FaqItemList.add(new FaqItem("How do I equip my weapons?", "Go to the menu option and choose weapons."));
+        FaqItemList.add(new FaqItem("How do I change classes", "You are only allowed to start with a default class, however once you reach lvl25 you will unlock a new class"));
+        FaqItemList.add(new FaqItem("Can I change my name?", "You can only keep the name you chose when you started."));
+
+
+        ArrayAdapter adapter = new ArrayAdapter(getContext(), android.R.layout.simple_list_item_1, FaqItemList);
+        CustomAdapter adapter1 = new CustomAdapter(getContext(), FaqItemList);
+        list.setAdapter(adapter1);
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+               FaqItem item = (FaqItem) list.getItemAtPosition(position);
+                faqFragmentTextView.setText(item.getAnswer());
+            }
+        });
+
+        return view;
+
+
+
+
     }
+
+    public class CustomAdapter extends ArrayAdapter<FaqItem>{
+        public CustomAdapter(Context context, ArrayList<FaqItem> items){
+            super(context, 0, items);
+        }
+        public View getView(int position, View convertView, ViewGroup parent){
+            FaqItem item = getItem(position);
+
+            // If the current item in the list doesn't have a view, give it a view
+            if(convertView == null){
+                convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_view, parent, false);
+            }
+            TextView name = (TextView) convertView.findViewById(R.id.answer);
+            name.setText(item.getAnswer());
+            return convertView;
+        }
+    }
+
+
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
