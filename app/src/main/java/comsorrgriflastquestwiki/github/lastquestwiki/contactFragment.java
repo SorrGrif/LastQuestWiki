@@ -119,7 +119,6 @@ public class contactFragment extends Fragment {
                 if(!hasAt || !hasDot)
                 {
                     fromTxt.startAnimation(shake);
-                    fromTxt.setBackgroundColor(Color.parseColor("#FF0000"));
                 }
                 else
                 {
