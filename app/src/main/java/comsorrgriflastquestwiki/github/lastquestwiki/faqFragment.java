@@ -85,17 +85,40 @@ public class faqFragment extends Fragment {
         ArrayAdapter adapter = new ArrayAdapter(getContext(), android.R.layout.simple_list_item_1, FaqItemList);
         CustomAdapter adapter1 = new CustomAdapter(getContext(), FaqItemList);
         list.setAdapter(adapter1);
-        list.setOnClickListener(new AdapterView.OnItemClickListener(){
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener(){
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                FaqItem item = (FaqItem) list.getItemAtPosition(position);
-                faqFragmentTextView.setText(FaqItem);
+                faqFragmentTextView.setText(item.getAnswer());
             }
         });
 
         return view;
+
+
+
+
     }
+
+    public class CustomAdapter extends ArrayAdapter<FaqItem>{
+        public CustomAdapter(Context context, ArrayList<FaqItem> items){
+            super(context, 0, items);
+        }
+        public View getView(int position, View convertView, ViewGroup parent){
+            FaqItem item = getItem(position);
+
+            // If the current item in the list doesn't have a view, give it a view
+            if(convertView == null){
+                convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_view, parent, false);
+            }
+            TextView name = (TextView) convertView.findViewById(R.id.answer);
+            name.setText(item.getAnswer());
+            return convertView;
+        }
+    }
+
+
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
