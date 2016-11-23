@@ -1,9 +1,12 @@
 package comsorrgriflastquestwiki.github.lastquestwiki;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.ContactsContract;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -90,8 +93,11 @@ public class contactFragment extends Fragment {
         subjectTxt.setHint("Subject");
         bodyTxt.setHint("Message");
 
-        //init the send email button
+        //init the buttons
         Button sendBtn = (Button) view.findViewById(R.id.emailButton);
+        Button addContactBtn = (Button) view.findViewById(R.id.contactButton);
+        Button websiteBtn = (Button) view.findViewById(R.id.websiteButton);
+        Button mapBtn = (Button) view.findViewById(R.id.mapButton);
 
         //create an action when send email button is clicked
         sendBtn.setOnClickListener(new View.OnClickListener() {
@@ -126,17 +132,82 @@ public class contactFragment extends Fragment {
                     String subject = subjectTxt.getText().toString();
                     String body = bodyTxt.getText().toString();
 
-                    //run the sendEmail function
-                    sendEmail(from, subject, body);
+                    //set default text if body and subject are empty
+                    if(subject.equals("")) subject = "Question about Last Quest Wiki app";
+                    if(body.equals("")) body = "My question about Last Quest Wiki app is...";
+
+                    //send the email
+                    Intent intent = new Intent(Intent.ACTION_SENDTO);
+                    intent.setData(Uri.parse("mailto:"));
+                    intent.putExtra(Intent.EXTRA_EMAIL, new String[] {from});
+                    intent.putExtra(Intent.EXTRA_SUBJECT, subject);
+                    intent.putExtra(Intent.EXTRA_TEXT, body);
+                    if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
+                        startActivity(intent);
+                    }
+                    else{
+                        Snackbar snackbar = Snackbar.make(getActivity().findViewById(android.R.id.content),
+                                "No installed software to complete the task", Snackbar.LENGTH_SHORT);
+                        snackbar.show();
+                    }
                 }
 
 
             }
         });
 
+        //create an action when add contact button is clicked
+        addContactBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_INSERT);
+                intent.setType(ContactsContract.Contacts.CONTENT_TYPE);
+                intent.putExtra(ContactsContract.Intents.Insert.NAME, "Last Quest Wiki Team");
+                intent.putExtra(ContactsContract.Intents.Insert.EMAIL, "lastquestwiki@lastquestwiki.com");
+                intent.putExtra(ContactsContract.Intents.Insert.PHONE, "+1(888)-888-8888");
+                if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
+                    startActivity(intent);
+                }
+                else{
+                    Snackbar snackbar = Snackbar.make(getActivity().findViewById(android.R.id.content),
+                            "No installed software to complete the task", Snackbar.LENGTH_SHORT);
+                    snackbar.show();
+                }
+            }
+        });
 
+        //create an action when visit website button is clicked
+        websiteBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri website = Uri.parse("https://www.lastquestwiki.com");
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(website);
+                if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
+                    startActivity(intent);
+                } else {
+                    Snackbar snackbar = Snackbar.make(getActivity().findViewById(android.R.id.content), "No installed software to complete the task", Snackbar.LENGTH_SHORT);
+                    snackbar.show();
+                }
+            }
+        });
 
-
+        //create an action when view on map button is clicked
+        mapBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri geoLocation = Uri.parse("geo:0,0?q=42.248013,-83.0185792(Last Quest Wiki HQ)");
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(geoLocation);
+                if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
+                    startActivity(intent);
+                }
+                else{
+                    Snackbar snackbar = Snackbar.make(getActivity().findViewById(android.R.id.content), "No installed software to complete the task", Snackbar.LENGTH_SHORT);
+                    snackbar.show();
+                }
+            }
+        });
 
         return view;
     }
@@ -182,6 +253,6 @@ public class contactFragment extends Fragment {
 
     private void sendEmail(String from, String subject, String body)
     {
-        
+
     }
 }
