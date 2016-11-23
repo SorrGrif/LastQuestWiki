@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -32,6 +34,7 @@ public class contactFragment extends Fragment {
     private EditText fromTxt;
     private EditText subjectTxt;
     private EditText bodyTxt;
+    private Animation shake;
 
 
     private OnFragmentInteractionListener mListener;
@@ -72,10 +75,13 @@ public class contactFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_contact, container, false);
+        shake = AnimationUtils.loadAnimation(getActivity(), R.anim.shake);
         fromTxt = (EditText) view.findViewById(R.id.fromTxtField);
         subjectTxt = (EditText) view.findViewById(R.id.subjectTxtField);
         bodyTxt = (EditText) view.findViewById(R.id.bodyTxtField);
-
+        fromTxt.setHint("From");
+        subjectTxt.setHint("Subject");
+        bodyTxt.setHint("Message");
 
 
         Button sendBtn = (Button) view.findViewById(R.id.emailButton);
@@ -84,15 +90,25 @@ public class contactFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 String from = fromTxt.getText().toString();
+                boolean hasAt = false;
+                boolean hasDot = false;
+                for(int i = 0; i < from.length(); i++) {
+                    if (from.substring(i, i + 1).equals("@")) hasAt = true;
+                    if (from.substring(i, i + 1).equals(".")) hasDot = true;
+                }
+
+                if(!hasAt || !hasDot) fromTxt.startAnimation(shake);
+                else;
+
+
+
                 String subject = subjectTxt.getText().toString();
                 String body = bodyTxt.getText().toString();
                 sendEmail(from, subject, body);
             }
         });
 
-        fromTxt.setHint("From");
-        subjectTxt.setHint("Subject");
-        bodyTxt.setHint("Message");
+
 
 
 
