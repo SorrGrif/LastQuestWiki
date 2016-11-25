@@ -18,7 +18,8 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,
-        contactFragment.OnFragmentInteractionListener{
+        contactFragment.OnFragmentInteractionListener,
+        racesFragment.OnFragmentInteractionListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,7 +86,10 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
+            FragmentManager fm = getSupportFragmentManager();
+            FragmentTransaction tran = fm.beginTransaction();
+            tran.replace(R.id.mainFrame, new racesFragment());
+            tran.commit();
         } else if (id == R.id.nav_gallery) {
             FragmentManager fm = getSupportFragmentManager();
             FragmentTransaction tran = fm.beginTransaction();
