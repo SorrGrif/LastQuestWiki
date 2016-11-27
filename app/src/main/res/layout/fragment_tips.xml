@@ -2,8 +2,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="comsorrgriflastquestwiki.github.lastquestwiki.tipsFragment">
+    tools:context="comsorrgriflastquestwiki.github.lastquestwiki.tipsFragment"
+    android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
 
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="GamePlay Tips"
+        android:id="@+id/tip"
+        android:gravity="center"
+        android:paddingBottom="@dimen/fab_margin"
+        android:textColor="@android:color/black"
+        android:textStyle="bold|italic" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Try to talk to talk to the old man in the cabin to know your next location"
+        android:id="@+id/gameTip"
+        android:gravity="center"
+        android:paddingBottom="@dimen/fab_margin"
+        android:textColor="@android:color/black"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="If you arrive to the next town's entrance you will encounter a boss battle"
+        android:id="@+id/gameTip2"
+        android:paddingBottom="@dimen/fab_margin"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Be aware of the turn counts when fighting extra bosses"
+        android:id="@+id/gameTip3"
+        android:paddingBottom="@dimen/fab_margin"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="If you mix different items together you will have better chances at surviving none-element monsters."
+        android:id="@+id/gameTip4"
+        android:textColor="@android:color/black" />
 </LinearLayout>
