@@ -9,6 +9,8 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -86,12 +88,13 @@ public class racesFragment extends Fragment {
          * clicked the human fragment opens
          *
          * @author Griffin Sorrentino
-         * @version 1.2
+         * @version 1.3
          */
         human.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction ft = fm.beginTransaction();
+                ft.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right);
                 ft.replace(R.id.mainFrame, new humanFragment());
                 ft.addToBackStack("");
                 ft.commit();
@@ -102,12 +105,13 @@ public class racesFragment extends Fragment {
          * clicked the elf fragment opens
          *
          * @author Griffin Sorrentino
-         * @version 1.0
+         * @version 1.1
          */
         elf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction ft = fm.beginTransaction();
+                ft.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right);
                 ft.replace(R.id.mainFrame, new elfFragment());
                 ft.addToBackStack("");
                 ft.commit();
@@ -118,12 +122,13 @@ public class racesFragment extends Fragment {
          * clicked the dwarf fragment opens
          *
          * @author Griffin Sorrentino
-         * @version 1.0
+         * @version 1.1
          */
         dwarf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction ft = fm.beginTransaction();
+                ft.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right);
                 ft.replace(R.id.mainFrame, new dwarfFragment());
                 ft.addToBackStack("");
                 ft.commit();
@@ -134,12 +139,13 @@ public class racesFragment extends Fragment {
          * clicked the hobbit fragment opens
          *
          * @author Griffin Sorrentino
-         * @version 1.0
+         * @version 1.1
          */
         hobbit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction ft = fm.beginTransaction();
+                ft.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right);
                 ft.replace(R.id.mainFrame, new hobbitFragment());
                 ft.addToBackStack("");
                 ft.commit();
