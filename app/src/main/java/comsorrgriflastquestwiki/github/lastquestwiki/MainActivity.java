@@ -18,7 +18,17 @@ import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,
-        contactFragment.OnFragmentInteractionListener{
+        contactFragment.OnFragmentInteractionListener,
+        classesFragment.OnFragmentInteractionListener,
+        racesFragment.OnFragmentInteractionListener,
+        faqFragment.OnFragmentInteractionListener,
+        puzzleFragment.OnFragmentInteractionListener,
+        tutorialFragment.OnFragmentInteractionListener,
+        //uncomment once tips fragment is created
+        //tipsFragment.OnFragmentInteractionListener,
+        itemsFragment.OnFragmentInteractionListener{
+
+    FragmentManager fm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,23 +93,33 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-            FragmentManager fm = getSupportFragmentManager();
-            FragmentTransaction tran = fm.beginTransaction();
+        fm = getSupportFragmentManager();
+        FragmentTransaction tran = fm.beginTransaction();
+        if (id == R.id.nav_races) {
+            tran.replace(R.id.mainFrame, new racesFragment());
+            tran.commit();
+        } else if (id == R.id.nav_contact) {
             tran.replace(R.id.mainFrame, new contactFragment());
             tran.commit();
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        } else if (id == R.id.nav_classes) {
+            tran.replace(R.id.mainFrame, new classesFragment());
+            tran.commit();
+        }else if (id == R.id.nav_items) {
+            tran.replace(R.id.mainFrame, new itemsFragment());
+            tran.commit();
+        }else if (id == R.id.nav_puzzle) {
+            tran.replace(R.id.mainFrame, new puzzleFragment());
+            tran.commit();
+        }else if (id == R.id.nav_faq) {
+            tran.replace(R.id.mainFrame, new faqFragment());
+            tran.commit();
+        }else if (id == R.id.nav_tips) {
+            //uncomment once tips is created
+            //tran.replace(R.id.mainFrame, new tipFragment());
+            //tran.commit();
+        } else if (id == R.id.nav_tutorials) {
+            tran.replace(R.id.mainFrame, new tutorialFragment());
+            tran.commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
