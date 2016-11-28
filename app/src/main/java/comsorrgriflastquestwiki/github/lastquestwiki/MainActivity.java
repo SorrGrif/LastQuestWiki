@@ -19,7 +19,8 @@ import android.view.MenuItem;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,
         contactFragment.OnFragmentInteractionListener,
-        racesFragment.OnFragmentInteractionListener{
+        racesFragment.OnFragmentInteractionListener,
+        humanFragment.OnFragmentInteractionListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

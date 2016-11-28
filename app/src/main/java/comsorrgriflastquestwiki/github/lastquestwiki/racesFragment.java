@@ -84,9 +84,10 @@ public class racesFragment extends Fragment {
         human.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                FragmentTransaction ft = fm.beginTransaction();
-//                ft.replace(R.id.mainFrame, new humanFragment());
-//                ft.commit();
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.replace(R.id.mainFrame, new humanFragment());
+                ft.addToBackStack("");
+                ft.commit();
                 Toast toast = Toast.makeText(getActivity().getApplicationContext(), "This is toast, yum.", Toast.LENGTH_SHORT);
                 toast.show();
             }
