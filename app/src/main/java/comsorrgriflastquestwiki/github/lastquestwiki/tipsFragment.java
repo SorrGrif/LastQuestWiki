@@ -15,27 +15,24 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link tipsFragment.OnFragmentInteractionListener} interface
+ * {@link TipFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link tipsFragment#newInstance} factory method to
+ * Use the {@link TipFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class tipsFragment extends Fragment {
+public class TipFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    private SectionsPagerAdapter;
-    private ViewPager mViewPager;
-
+    private SectionPagerAdapter mSectionsPagerAdapter;
     private OnFragmentInteractionListener mListener;
-
-    public tipsFragment() {
+    private ViewPager mViewPager;
+    public TipFragment() {
         // Required empty public constructor
     }
 
@@ -45,11 +42,11 @@ public class tipsFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment tipsFragment.
+     * @return A new instance of fragment TipFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static tipsFragment newInstance(String param1, String param2) {
-        tipsFragment fragment = new tipsFragment();
+    public static TipFragment newInstance(String param1, String param2) {
+        TipFragment fragment = new TipFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -69,12 +66,11 @@ public class tipsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-
-         View view =  inflater.inflate(R.layout.fragment_tips, container, false);
-        SectionsPagerAdapter = new SectionsPagerAdapter(getActivity().getSupportFragmentManager());
-        mViewPager = (ViewPager) view.findViewById(R.id.tipcontent);
-        mViewPager.setAdapter(SectionsPagerAdapter);
+        View view =  inflater.inflate(R.layout.fragment_tips, container, false);
+        mSectionsPagerAdapter = new SectionPagerAdapter(getActivity().getSupportFragmentManager());
+        mViewPager = (ViewPager)  view.findViewById(R.id.tipcontent);
+        mViewPager.setAdapter(mSectionsPagerAdapter);
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -106,7 +102,7 @@ public class tipsFragment extends Fragment {
      * fragment to allow an interaction in this fragment to be communicated
      * to the activity and potentially other fragments contained in that
      * activity.
-     * <p>
+     * <p/>
      * See the Android Training lesson <a href=
      * "http://developer.android.com/training/basics/fragments/communicating.html"
      * >Communicating with Other Fragments</a> for more information.
@@ -115,19 +111,17 @@ public class tipsFragment extends Fragment {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
-
-    public class SectionsPagerAdapter extends FragmentPagerAdapter{
-        public SectionsPagerAdapter(FragmentManager fm){
+    public class SectionPagerAdapter extends FragmentPagerAdapter {
+        public SectionPagerAdapter(FragmentManager fm){
             super(fm);
         }
-        //here
-        public Fragment getItem(int position){
-
+        public Fragment getItem(int position)
+        {
+        switch(position){
+            }
         }
-
-        @Override
-        public int getCount() {
-            return 0;
+        public int getCount(){
+            return 4;
         }
     }
 }
