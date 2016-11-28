@@ -30,7 +30,7 @@ public class tipsFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    private mSectionsPagerAdapter;
+    private SectionsPagerAdapter;
     private ViewPager mViewPager;
 
     private OnFragmentInteractionListener mListener;
@@ -72,9 +72,9 @@ public class tipsFragment extends Fragment {
         // Inflate the layout for this fragment
 
          View view =  inflater.inflate(R.layout.fragment_tips, container, false);
-        mSectionsPagerAdapter = new SectionPagerAdapter(getActivity().getSupportFragmentManager());
+        SectionsPagerAdapter = new SectionsPagerAdapter(getActivity().getSupportFragmentManager());
         mViewPager = (ViewPager) view.findViewById(R.id.tipcontent);
-        mViewPager.setAdapter(mSectionsPagerAdapter);
+        mViewPager.setAdapter(SectionsPagerAdapter);
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -116,12 +116,18 @@ public class tipsFragment extends Fragment {
         void onFragmentInteraction(Uri uri);
     }
 
-    public class SectionPagerAdapter extends FragmentPagerAdapter{
-        public SectionPagerAdapter(FragmentManager fm){
+    public class SectionsPagerAdapter extends FragmentPagerAdapter{
+        public SectionsPagerAdapter(FragmentManager fm){
             super(fm);
         }
+        //here
         public Fragment getItem(int position){
 
+        }
+
+        @Override
+        public int getCount() {
+            return 0;
         }
     }
 }
