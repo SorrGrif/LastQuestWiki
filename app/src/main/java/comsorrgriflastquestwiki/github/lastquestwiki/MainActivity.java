@@ -19,7 +19,6 @@ import android.view.MenuItem;
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,
         contactFragment.OnFragmentInteractionListener,
-        humanFragment.OnFragmentInteractionListener,
         classesFragment.OnFragmentInteractionListener,
         racesFragment.OnFragmentInteractionListener,
         faqFragment.OnFragmentInteractionListener,
@@ -27,7 +26,11 @@ public class MainActivity extends AppCompatActivity
         tutorialFragment.OnFragmentInteractionListener,
         //uncomment once tips fragment is created
         //tipsFragment.OnFragmentInteractionListener,
-        itemsFragment.OnFragmentInteractionListener{
+        itemsFragment.OnFragmentInteractionListener,
+        humanFragment.OnFragmentInteractionListener,
+        elfFragment.OnFragmentInteractionListener,
+        dwarfFragment.OnFragmentInteractionListener,
+        hobbitFragment.OnFragmentInteractionListener{
 
     FragmentManager fm;
 

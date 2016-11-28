@@ -81,6 +81,13 @@ public class racesFragment extends Fragment {
         //init fragment manager
         fm = getActivity().getSupportFragmentManager();
 
+        /**
+         * Event handler when the image of the human is
+         * clicked the human fragment opens
+         *
+         * @author Griffin Sorrentino
+         * @version 1.2
+         */
         human.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -88,37 +95,56 @@ public class racesFragment extends Fragment {
                 ft.replace(R.id.mainFrame, new humanFragment());
                 ft.addToBackStack("");
                 ft.commit();
-                Toast toast = Toast.makeText(getActivity().getApplicationContext(), "This is toast, yum.", Toast.LENGTH_SHORT);
-                toast.show();
             }
         });
-//
-//        elf.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                FragmentTransaction ft = fm.beginTransaction();
-//                ft.replace(R.id.mainFrame, new elfFragment());
-//                ft.commit();
-//            }
-//        });
-//
-//        dwarf.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                FragmentTransaction ft = fm.beginTransaction();
-//                ft.replace(R.id.mainFrame, new dwarfFragment());
-//                ft.commit();
-//            }
-//        });
-//
-//        hobbit.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                FragmentTransaction ft = fm.beginTransaction();
-//                ft.replace(R.id.mainFrame, new hobbitFragment());
-//                ft.commit();
-//            }
-//        });
+        /**
+         * Event handler when the image of the elf is
+         * clicked the elf fragment opens
+         *
+         * @author Griffin Sorrentino
+         * @version 1.0
+         */
+        elf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.replace(R.id.mainFrame, new elfFragment());
+                ft.addToBackStack("");
+                ft.commit();
+            }
+        });
+        /**
+         * Event handler when the image of the dwarf is
+         * clicked the dwarf fragment opens
+         *
+         * @author Griffin Sorrentino
+         * @version 1.0
+         */
+        dwarf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.replace(R.id.mainFrame, new dwarfFragment());
+                ft.addToBackStack("");
+                ft.commit();
+            }
+        });
+        /**
+         * Event handler when the image of the hobbit is
+         * clicked the hobbit fragment opens
+         *
+         * @author Griffin Sorrentino
+         * @version 1.0
+         */
+        hobbit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.replace(R.id.mainFrame, new hobbitFragment());
+                ft.addToBackStack("");
+                ft.commit();
+            }
+        });
 
 
         return view;

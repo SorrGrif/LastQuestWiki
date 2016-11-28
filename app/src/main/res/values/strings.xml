@@ -8,4 +8,21 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="humanDescription">Born on a strange planet named \"Earth\", the Human is a very
+                                    versatile and well rounded race. Capable of soloing and being a
+                                    team player, the Human is recommended for new players.</string>
+
+    <string name="elfDescription">  Elves are known across realms as being the most beautiful
+                                    creatures in the universe. Elves have higher dexterity however
+                                    have lower strength from the trait of flight rather than fight.</string>
+
+    <string name="dwarfDescription">Dwarf\'s are not as beautiful as the Elf, therefore start with
+                                    lower charisma, intelligence and wisdom. Spending a lifetime living
+                                    in mountains and caves, the Dwarf is known to have super-human
+                                    strength and can take a million and one attacks from a foe.</string>
+
+    <string name="hobbitDescription">The Hobbit is a small creature that like to stay low to the ground
+                                     and are known to have a strange affinity with rings. Hobbits have
+                                     cat like reflexes and golem like stamina therefore start with more
+                                     reflex and constitution however starting with lower strength.</string>
 </resources>
