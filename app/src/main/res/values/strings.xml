@@ -9,6 +9,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="welcomeText">Welcome</string>
-    <string name="introText">This app is a wiki app for the Last Quest MMORPG made by RPG Inc.</string>
+    <string name="introText">This app is a wiki app for the Last Quest MMORPG made by RPG Inc. Please
+                             select an option from the menu to navigate through</string>
     <string name="copyrightText">&#169; RPG Inc.</string>
 </resources>
