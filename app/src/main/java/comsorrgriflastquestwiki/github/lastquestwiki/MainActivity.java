@@ -26,7 +26,8 @@ public class MainActivity extends AppCompatActivity
         tutorialFragment.OnFragmentInteractionListener,
         //uncomment once tips fragment is created
         //tipsFragment.OnFragmentInteractionListener,
-        itemsFragment.OnFragmentInteractionListener{
+        itemsFragment.OnFragmentInteractionListener,
+        welcomeFragment.OnFragmentInteractionListener{
 
     FragmentManager fm;
 
@@ -54,6 +55,11 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        fm = getSupportFragmentManager();
+        FragmentTransaction tran = fm.beginTransaction();
+        tran.replace(R.id.mainFrame, new welcomeFragment());
+        tran.commit();
     }
 
     @Override
