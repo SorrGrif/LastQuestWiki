@@ -1,8 +1,11 @@
 package comsorrgriflastquestwiki.github.lastquestwiki;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,7 +17,19 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener,
+        contactFragment.OnFragmentInteractionListener,
+        classesFragment.OnFragmentInteractionListener,
+        racesFragment.OnFragmentInteractionListener,
+        faqFragment.OnFragmentInteractionListener,
+        puzzleFragment.OnFragmentInteractionListener,
+        tutorialFragment.OnFragmentInteractionListener,
+        //uncomment once tips fragment is created
+        //tipsFragment.OnFragmentInteractionListener,
+        itemsFragment.OnFragmentInteractionListener,
+        welcomeFragment.OnFragmentInteractionListener{
+
+    FragmentManager fm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +55,11 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        fm = getSupportFragmentManager();
+        FragmentTransaction tran = fm.beginTransaction();
+        tran.replace(R.id.mainFrame, new welcomeFragment());
+        tran.commit();
     }
 
     @Override
@@ -79,23 +99,42 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        fm = getSupportFragmentManager();
+        FragmentTransaction tran = fm.beginTransaction();
+        if (id == R.id.nav_races) {
+            tran.replace(R.id.mainFrame, new racesFragment());
+            tran.commit();
+        } else if (id == R.id.nav_contact) {
+            tran.replace(R.id.mainFrame, new contactFragment());
+            tran.commit();
+        } else if (id == R.id.nav_classes) {
+            tran.replace(R.id.mainFrame, new classesFragment());
+            tran.commit();
+        }else if (id == R.id.nav_items) {
+            tran.replace(R.id.mainFrame, new itemsFragment());
+            tran.commit();
+        }else if (id == R.id.nav_puzzle) {
+            tran.replace(R.id.mainFrame, new puzzleFragment());
+            tran.commit();
+        }else if (id == R.id.nav_faq) {
+            tran.replace(R.id.mainFrame, new faqFragment());
+            tran.commit();
+        }else if (id == R.id.nav_tips) {
+            //uncomment once tips is created
+            //tran.replace(R.id.mainFrame, new tipFragment());
+            //tran.commit();
+        } else if (id == R.id.nav_tutorials) {
+            tran.replace(R.id.mainFrame, new tutorialFragment());
+            tran.commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
     }
 }
