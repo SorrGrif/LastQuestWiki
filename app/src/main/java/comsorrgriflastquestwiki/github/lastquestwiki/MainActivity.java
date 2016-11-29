@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity
         humanFragment.OnFragmentInteractionListener,
         elfFragment.OnFragmentInteractionListener,
         dwarfFragment.OnFragmentInteractionListener,
-        hobbitFragment.OnFragmentInteractionListener{
+        hobbitFragment.OnFragmentInteractionListener,
+        welcomeFragment.OnFragmentInteractionListener{
 
     FragmentManager fm;
 
@@ -58,6 +59,11 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        fm = getSupportFragmentManager();
+        FragmentTransaction tran = fm.beginTransaction();
+        tran.replace(R.id.mainFrame, new welcomeFragment());
+        tran.commit();
     }
 
     @Override

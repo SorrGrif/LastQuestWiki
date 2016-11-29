@@ -11,6 +11,8 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="comsorrgriflastquestwiki.github.lastquestwiki.MainActivity"
     tools:showIn="@layout/app_bar_main"
-    android:id="@+id/mainFrame">
+    android:id="@+id/mainFrame"
+    android:orientation="vertical">
+
 
 </FrameLayout>
