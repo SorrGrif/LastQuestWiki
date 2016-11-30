@@ -23,8 +23,10 @@ public class tipContentFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
 
+
     // TODO: Rename and change types of parameters
     private String mParam1;
+
 
     private OnFragmentInteractionListener mListener;
 
@@ -41,10 +43,11 @@ public class tipContentFragment extends Fragment {
      * @return A new instance of fragment tipContentFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static tipContentFragment newInstance(String param1, String param2) {
+    public static tipContentFragment newInstance(String param1) {
         tipContentFragment fragment = new tipContentFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
+
         fragment.setArguments(args);
         return fragment;
     }
@@ -55,6 +58,7 @@ public class tipContentFragment extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
         }
+
     }
 
     @Override
@@ -62,9 +66,10 @@ public class tipContentFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
       View view =  inflater.inflate(R.layout.fragment_tip_content, container, false);
-        if(mParam1 != null){
+        if(mParam1 != null) {
             ((TextView) view.findViewById(R.id.tipcontent)).setText(mParam1);
         }
+
         return view;
     }
 
@@ -92,6 +97,9 @@ public class tipContentFragment extends Fragment {
         super.onDetach();
         mListener = null;
     }
+
+
+
 
     /**
      * This interface must be implemented by activities that contain this

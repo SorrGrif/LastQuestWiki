@@ -20,19 +20,19 @@ import android.view.ViewGroup;
  * Use the {@link TipFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class TipFragment extends Fragment {
+public class tipsFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+
+
 
     // TODO: Rename and change types of parameters
     private String mParam1;
-    private String mParam2;
     private SectionPagerAdapter mSectionsPagerAdapter;
     private OnFragmentInteractionListener mListener;
     private ViewPager mViewPager;
-    public TipFragment() {
+    public tipsFragment() {
         // Required empty public constructor
     }
 
@@ -41,15 +41,14 @@ public class TipFragment extends Fragment {
      * this fragment using the provided parameters.
      *
      * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
      * @return A new instance of fragment TipFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static TipFragment newInstance(String param1, String param2) {
-        TipFragment fragment = new TipFragment();
+    public static tipsFragment newInstance(String param1) {
+        tipsFragment fragment = new tipsFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
+
         fragment.setArguments(args);
         return fragment;
     }
@@ -59,7 +58,8 @@ public class TipFragment extends Fragment {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+
+
         }
     }
 
@@ -117,9 +117,12 @@ public class TipFragment extends Fragment {
         }
         public Fragment getItem(int position)
         {
-        switch(position){
-
-
+            switch(position){
+                case 0: return tipContentFragment.newInstance("Make sure to count the turns when battling the bosses");
+                case 1: return tipContentFragment.newInstance("Use healing items when you have low health");
+                case 2: return tipContentFragment.newInstance("Keep the status ailments constants during certain battles");
+                case 3: return tipContentFragment.newInstance("Save before going into an important battle");
+                default: return tipContentFragment.newInstance("Try again");
             }
         }
         public int getCount(){
