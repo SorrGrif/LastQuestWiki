@@ -120,9 +120,9 @@ public class MainActivity extends AppCompatActivity
             tran.replace(R.id.mainFrame, new faqFragment());
             tran.commit();
         }else if (id == R.id.nav_tips) {
-            //uncomment once tips is created
-            //tran.replace(R.id.mainFrame, new tipFragment());
-            //tran.commit();
+
+            tran.replace(R.id.mainFrame, new tipsFragment());
+            tran.commit();
         } else if (id == R.id.nav_tutorials) {
             tran.replace(R.id.mainFrame, new tutorialFragment());
             tran.commit();

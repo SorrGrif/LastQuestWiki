@@ -7,6 +7,13 @@
             android:id="@+id/nav_classes"
             android:icon="@drawable/ic_group_black_24dp"
             android:title="Classes" />
+
+
+        <item
+            android:id="@+id/nav_races"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="Classes" />
+
         <item
             android:id="@+id/nav_items"
             android:icon="@drawable/ic_build_black_24dp"
