@@ -24,14 +24,14 @@ public class MainActivity extends AppCompatActivity
         faqFragment.OnFragmentInteractionListener,
         puzzleFragment.OnFragmentInteractionListener,
         tutorialFragment.OnFragmentInteractionListener,
-        //uncomment once tips fragment is created
-        //tipsFragment.OnFragmentInteractionListener,
+        tipsFragment.OnFragmentInteractionListener,
         itemsFragment.OnFragmentInteractionListener,
         humanFragment.OnFragmentInteractionListener,
         elfFragment.OnFragmentInteractionListener,
         dwarfFragment.OnFragmentInteractionListener,
         hobbitFragment.OnFragmentInteractionListener,
         welcomeFragment.OnFragmentInteractionListener{
+
 
     FragmentManager fm;
 
@@ -125,9 +125,9 @@ public class MainActivity extends AppCompatActivity
             tran.replace(R.id.mainFrame, new faqFragment());
             tran.commit();
         }else if (id == R.id.nav_tips) {
-            //uncomment once tips is created
-            //tran.replace(R.id.mainFrame, new tipFragment());
-            //tran.commit();
+
+            tran.replace(R.id.mainFrame, new tipsFragment());
+            tran.commit();
         } else if (id == R.id.nav_tutorials) {
             tran.replace(R.id.mainFrame, new tutorialFragment());
             tran.commit();

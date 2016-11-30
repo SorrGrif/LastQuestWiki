@@ -2,14 +2,18 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_races"
-            android:icon="@drawable/ic_accessibility_black_24dp"
-            android:title="Races" />
+
         <item
             android:id="@+id/nav_classes"
             android:icon="@drawable/ic_group_black_24dp"
             android:title="Classes" />
+
+
+        <item
+            android:id="@+id/nav_races"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="Races" />
+
         <item
             android:id="@+id/nav_items"
             android:icon="@drawable/ic_build_black_24dp"
@@ -34,19 +38,12 @@
             android:id="@+id/nav_contact"
             android:icon="@drawable/ic_question_answer_black_24dp"
             android:title="Contact Us" />
+
     </group>
 
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
-        </menu>
-    </item>
+
+
+
+
 
 </menu>
