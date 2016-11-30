@@ -33,7 +33,8 @@
                 android:longClickable="false"
                 android:layout_marginLeft="0dp"
                 android:layout_marginTop="20dp"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/image_border" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -64,7 +65,8 @@
                 android:layout_gravity="center_horizontal|right"
                 android:layout_marginRight="11dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginLeft="0dp" />
+                android:layout_marginLeft="0dp"
+                android:background="@drawable/image_border" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -102,7 +104,8 @@
                 android:src="@drawable/dwarf"
                 android:layout_marginLeft="0dp"
                 android:layout_marginTop="50dp"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/image_border" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -133,7 +136,8 @@
                 android:layout_gravity="center_horizontal|right"
                 android:layout_marginRight="11dp"
                 android:layout_marginTop="50dp"
-                android:layout_marginLeft="0dp" />
+                android:layout_marginLeft="0dp"
+                android:background="@drawable/image_border" />
 
             <TextView
                 android:layout_width="wrap_content"
