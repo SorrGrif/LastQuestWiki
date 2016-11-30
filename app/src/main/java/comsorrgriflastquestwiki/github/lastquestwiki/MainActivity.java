@@ -27,6 +27,10 @@ public class MainActivity extends AppCompatActivity
         //uncomment once tips fragment is created
         //tipsFragment.OnFragmentInteractionListener,
         itemsFragment.OnFragmentInteractionListener,
+        humanFragment.OnFragmentInteractionListener,
+        elfFragment.OnFragmentInteractionListener,
+        dwarfFragment.OnFragmentInteractionListener,
+        hobbitFragment.OnFragmentInteractionListener,
         welcomeFragment.OnFragmentInteractionListener{
 
     FragmentManager fm;
@@ -99,6 +103,7 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+
         fm = getSupportFragmentManager();
         FragmentTransaction tran = fm.beginTransaction();
         if (id == R.id.nav_races) {
