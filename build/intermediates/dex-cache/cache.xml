@@ -3,30 +3,12 @@
 
     <item
         is-multidex="true"
-        jar="E:\LastQuestWiki\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
-        <dex dex="E:\LastQuestWiki\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.4.0_b7ac742c529111c7965728720a19af905c8cbdef\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="E:\LastQuestWiki\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
-        sha1="3e654e09aaa4fcd2650109082b52eb37520e281a">
+        sha1="9945f87e5268e325bf8ff926d597e96b46c4b993">
         <dex dex="E:\LastQuestWiki\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_2af04051eea84521034ce05350e66b2ec390c4ad\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\LastQuestWiki\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="E:\LastQuestWiki\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_362e6b6aee59f05f2eb2c28eb4a6fc6b0a34d2b2\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -36,6 +18,24 @@
         revision="23.0.2"
         sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
         <dex dex="E:\LastQuestWiki\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.4.0_57a2635b27ab62bd385cb6205253e5bebb905de0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\LastQuestWiki\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="E:\LastQuestWiki\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.4.0_b7ac742c529111c7965728720a19af905c8cbdef\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\LastQuestWiki\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="E:\LastQuestWiki\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_362e6b6aee59f05f2eb2c28eb4a6fc6b0a34d2b2\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -52,7 +52,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
-        sha1="c945aa4fa81f1e45dc4eb0a8dd6ec903a8c4a84f">
+        sha1="00e052246db9995757efe68a5c3e33ed96ceb944">
         <dex dex="E:\LastQuestWiki\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7615e5026879245e9cead263541de7e5efacf85d\classes.dex" />
     </item>
     <item

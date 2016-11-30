@@ -24,10 +24,10 @@ public class MainActivity extends AppCompatActivity
         faqFragment.OnFragmentInteractionListener,
         puzzleFragment.OnFragmentInteractionListener,
         tutorialFragment.OnFragmentInteractionListener,
-        //uncomment once tips fragment is created
-        //tipsFragment.OnFragmentInteractionListener,
+        tipsFragment.OnFragmentInteractionListener,
         itemsFragment.OnFragmentInteractionListener,
-        welcomeFragment.OnFragmentInteractionListener{
+        welcomeFragment.OnFragmentInteractionListener,
+        tipContentFragment.OnFragmentInteractionListener{
 
     FragmentManager fm;
 

@@ -15,9 +15,7 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link TipFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link TipFragment#newInstance} factory method to
+ *
  * create an instance of this fragment.
  */
 public class tipsFragment extends Fragment {
