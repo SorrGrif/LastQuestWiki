@@ -26,8 +26,12 @@ public class MainActivity extends AppCompatActivity
         tutorialFragment.OnFragmentInteractionListener,
         tipsFragment.OnFragmentInteractionListener,
         itemsFragment.OnFragmentInteractionListener,
-        welcomeFragment.OnFragmentInteractionListener,
-        tipContentFragment.OnFragmentInteractionListener{
+        humanFragment.OnFragmentInteractionListener,
+        elfFragment.OnFragmentInteractionListener,
+        dwarfFragment.OnFragmentInteractionListener,
+        hobbitFragment.OnFragmentInteractionListener,
+        welcomeFragment.OnFragmentInteractionListener{
+
 
     FragmentManager fm;
 
@@ -38,14 +42,14 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//            }
+//        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -99,6 +103,7 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+
         fm = getSupportFragmentManager();
         FragmentTransaction tran = fm.beginTransaction();
         if (id == R.id.nav_races) {

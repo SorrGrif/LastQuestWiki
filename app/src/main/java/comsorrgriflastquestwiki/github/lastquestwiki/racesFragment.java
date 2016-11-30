@@ -4,9 +4,15 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 
 /**
@@ -26,6 +32,8 @@ public class racesFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    private FragmentManager fm;
 
     private OnFragmentInteractionListener mListener;
 
@@ -64,7 +72,88 @@ public class racesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_races, container, false);
+        View view =  inflater.inflate(R.layout.fragment_races, container, false);
+
+        //init imageviews
+        ImageView human = (ImageView) view.findViewById(R.id.humanImg);
+        ImageView elf = (ImageView) view.findViewById(R.id.elfImg);
+        ImageView dwarf = (ImageView) view.findViewById(R.id.dwarfImg);
+        ImageView hobbit = (ImageView) view.findViewById(R.id.hobbitImg);
+
+        //init fragment manager
+        fm = getActivity().getSupportFragmentManager();
+
+        /**
+         * Event handler when the image of the human is
+         * clicked the human fragment opens
+         *
+         * @author Griffin Sorrentino
+         * @version 1.3
+         */
+        human.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right);
+                ft.replace(R.id.mainFrame, new humanFragment());
+                ft.addToBackStack("");
+                ft.commit();
+            }
+        });
+        /**
+         * Event handler when the image of the elf is
+         * clicked the elf fragment opens
+         *
+         * @author Griffin Sorrentino
+         * @version 1.1
+         */
+        elf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right);
+                ft.replace(R.id.mainFrame, new elfFragment());
+                ft.addToBackStack("");
+                ft.commit();
+            }
+        });
+        /**
+         * Event handler when the image of the dwarf is
+         * clicked the dwarf fragment opens
+         *
+         * @author Griffin Sorrentino
+         * @version 1.1
+         */
+        dwarf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right);
+                ft.replace(R.id.mainFrame, new dwarfFragment());
+                ft.addToBackStack("");
+                ft.commit();
+            }
+        });
+        /**
+         * Event handler when the image of the hobbit is
+         * clicked the hobbit fragment opens
+         *
+         * @author Griffin Sorrentino
+         * @version 1.1
+         */
+        hobbit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right);
+                ft.replace(R.id.mainFrame, new hobbitFragment());
+                ft.addToBackStack("");
+                ft.commit();
+            }
+        });
+
+
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
