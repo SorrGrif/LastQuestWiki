@@ -2,94 +2,76 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="E:\LastQuestWiki\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="9945f87e5268e325bf8ff926d597e96b46c4b993">
-        <dex dex="E:\LastQuestWiki\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_2af04051eea84521034ce05350e66b2ec390c4ad\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\LastQuestWiki\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
-        <dex dex="E:\LastQuestWiki\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.4.0_57a2635b27ab62bd385cb6205253e5bebb905de0\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\LastQuestWiki\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
-        <dex dex="E:\LastQuestWiki\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.4.0_b7ac742c529111c7965728720a19af905c8cbdef\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\LastQuestWiki\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="E:\LastQuestWiki\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_362e6b6aee59f05f2eb2c28eb4a6fc6b0a34d2b2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\LastQuestWiki\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/griffinsorrentino/Documents/AndroidStudioProjects/LastQuestWiki/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="23.0.2"
         sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="E:\LastQuestWiki\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_4e8f3acf83c96cb9737501bc9ea4ca82af67535a\classes.dex" />
+        <dex dex="/Users/griffinsorrentino/Documents/AndroidStudioProjects/LastQuestWiki/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_21d32e8a92fd8674de7c6156744af44da513cf64.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="E:\LastQuestWiki\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="00e052246db9995757efe68a5c3e33ed96ceb944">
-        <dex dex="E:\LastQuestWiki\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7615e5026879245e9cead263541de7e5efacf85d\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\LastQuestWiki\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/griffinsorrentino/Documents/AndroidStudioProjects/LastQuestWiki/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="23.0.2"
         sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="E:\LastQuestWiki\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_083f6789b319d6578b13492f9fe6d1bdb9c1dd34\classes.dex" />
+        <dex dex="/Users/griffinsorrentino/Documents/AndroidStudioProjects/LastQuestWiki/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_1b5f14fa251375f60f9df5a76cac9d0c5815dfb8.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Reishin\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.2"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="E:\LastQuestWiki\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_f2eb3e92c13aede61bc3a05456efa21007a7fc76\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="E:\LastQuestWiki\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/griffinsorrentino/Documents/AndroidStudioProjects/LastQuestWiki/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="23.0.2"
         sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="E:\LastQuestWiki\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_bc12e8e6b34947d5d48819fd6f08eb2dbd082f22\classes.dex" />
+        <dex dex="/Users/griffinsorrentino/Documents/AndroidStudioProjects/LastQuestWiki/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_b56b2b8d774bb691c6714d1924019028a44df0d3.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="E:\LastQuestWiki\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/griffinsorrentino/Documents/AndroidStudioProjects/LastQuestWiki/app/build/intermediates/exploded-aar/com.android.support/design/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="/Users/griffinsorrentino/Documents/AndroidStudioProjects/LastQuestWiki/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.4.0_e3dabfc7bf41b7dda4205d1bd746da5de2a0a7dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/griffinsorrentino/Documents/AndroidStudioProjects/LastQuestWiki/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="23.0.2"
         sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="E:\LastQuestWiki\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_5556a1783fb61674a27862c03a69d67d1283bbd9\classes.dex" />
+        <dex dex="/Users/griffinsorrentino/Documents/AndroidStudioProjects/LastQuestWiki/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_f11bc9d2b4657154c8a0fc765b3f6f0365d05b42.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/griffinsorrentino/Documents/AndroidStudioProjects/LastQuestWiki/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="/Users/griffinsorrentino/Documents/AndroidStudioProjects/LastQuestWiki/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.4.0_609f0528efb904b974b381a9b1be1fc0ee0d15b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/griffinsorrentino/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/griffinsorrentino/Documents/AndroidStudioProjects/LastQuestWiki/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_842c28c4e14007862057c43a80a1d004200aff36.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/griffinsorrentino/Documents/AndroidStudioProjects/LastQuestWiki/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/griffinsorrentino/Documents/AndroidStudioProjects/LastQuestWiki/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_0c4184306156cc55643b8494372a26f1a401d444.jar" />
     </item>
 
 </items>

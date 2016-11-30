@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity
         puzzleFragment.OnFragmentInteractionListener,
         tutorialFragment.OnFragmentInteractionListener,
         tipsFragment.OnFragmentInteractionListener,
+        tipContentFragment.OnFragmentInteractionListener,
         itemsFragment.OnFragmentInteractionListener,
         humanFragment.OnFragmentInteractionListener,
         elfFragment.OnFragmentInteractionListener,
@@ -125,7 +126,6 @@ public class MainActivity extends AppCompatActivity
             tran.replace(R.id.mainFrame, new faqFragment());
             tran.commit();
         }else if (id == R.id.nav_tips) {
-
             tran.replace(R.id.mainFrame, new tipsFragment());
             tran.commit();
         } else if (id == R.id.nav_tutorials) {
