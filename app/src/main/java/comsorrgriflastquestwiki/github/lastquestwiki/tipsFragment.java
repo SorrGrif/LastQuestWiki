@@ -118,6 +118,8 @@ public class TipFragment extends Fragment {
         public Fragment getItem(int position)
         {
         switch(position){
+
+
             }
         }
         public int getCount(){
