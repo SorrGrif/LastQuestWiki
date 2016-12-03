@@ -30,7 +30,8 @@ public class MainActivity extends AppCompatActivity
         elfFragment.OnFragmentInteractionListener,
         dwarfFragment.OnFragmentInteractionListener,
         hobbitFragment.OnFragmentInteractionListener,
-        welcomeFragment.OnFragmentInteractionListener{
+        welcomeFragment.OnFragmentInteractionListener,
+        tipContentFragment.OnFragmentInteractionListener{
 
 
     FragmentManager fm;

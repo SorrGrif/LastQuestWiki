@@ -73,10 +73,10 @@ public class faqFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_faq, container, false);
-        faqFragmentTextView = (TextView) view.findViewById(R.id.answer);
+        faqFragmentTextView = (TextView) view.findViewById(R.id.questions);
         list = (ListView) view.findViewById(R.id.answers);
         final ArrayList<FaqItem> FaqItemList = new ArrayList<>();
-        FaqItemList.add(new FaqItem("How do I solve this?", "Move to the right and spin 180 degrees"));
+        FaqItemList.add(new FaqItem("Move to the right and spin 180 degrees?", "?"));
         FaqItemList.add(new FaqItem("How do I equip my weapons?", "Go to the menu option and choose weapons."));
         FaqItemList.add(new FaqItem("How do I change classes", "You are only allowed to start with a default class, however once you reach lvl25 you will unlock a new class"));
         FaqItemList.add(new FaqItem("Can I change my name?", "You can only keep the name you chose when you started."));
@@ -90,7 +90,7 @@ public class faqFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                FaqItem item = (FaqItem) list.getItemAtPosition(position);
-                faqFragmentTextView.setText(item.getAnswer());
+                faqFragmentTextView.setText(item.getQuestion());
             }
         });
 
