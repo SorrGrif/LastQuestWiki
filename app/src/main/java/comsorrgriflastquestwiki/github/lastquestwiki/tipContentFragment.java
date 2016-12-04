@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -22,11 +24,12 @@ public class tipContentFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
+    private static final String ARG_PARAM2 = "param2";
 
 
     // TODO: Rename and change types of parameters
     private String mParam1;
-
+    private String  mParam2;
 
     private OnFragmentInteractionListener mListener;
 
@@ -43,11 +46,11 @@ public class tipContentFragment extends Fragment {
      * @return A new instance of fragment tipContentFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static tipContentFragment newInstance(String param1) {
+    public static tipContentFragment newInstance(String param1, String param2) {
         tipContentFragment fragment = new tipContentFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
-
+        args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
@@ -57,6 +60,7 @@ public class tipContentFragment extends Fragment {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
+            mParam2 = getArguments().getString(ARG_PARAM2);
         }
 
     }
@@ -68,6 +72,8 @@ public class tipContentFragment extends Fragment {
       View view =  inflater.inflate(R.layout.fragment_tip_content, container, false);
         if(mParam1 != null) {
             ((TextView) view.findViewById(R.id.tipText)).setText(mParam1);
+        }if (mParam2 != null){
+            ((TextView) view.findViewById(R.id.tipNumber)).setText(mParam2);
         }
 
         return view;
