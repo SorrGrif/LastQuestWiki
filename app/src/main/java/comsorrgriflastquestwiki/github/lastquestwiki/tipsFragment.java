@@ -22,11 +22,14 @@ public class tipsFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
+    private static final String ARG_PARAM2 = "param2";
+
 
 
 
     // TODO: Rename and change types of parameters
     private String mParam1;
+    private String mParam2;
 
     private SectionPagerAdapter mSectionsPagerAdapter;
     private OnFragmentInteractionListener mListener;
@@ -43,10 +46,12 @@ public class tipsFragment extends Fragment {
      * @return A new instance of fragment TipFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static tipsFragment newInstance(String param1) {
+    public static tipsFragment newInstance(String param1, String param2) {
         tipsFragment fragment = new tipsFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
+        args.putString(ARG_PARAM2, param2);
+
 
 
         fragment.setArguments(args);
@@ -58,6 +63,8 @@ public class tipsFragment extends Fragment {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
+            mParam2 = getArguments().getString(ARG_PARAM2);
+
 
 
 
@@ -119,7 +126,7 @@ public class tipsFragment extends Fragment {
         public Fragment getItem(int position)
         {
             switch(position){
-                case 0: return tipContentFragment.newInstance("Make sure to count the turns when battling the bosses", "1");
+                case 0: return tipContentFragment.newInstance("Make sure to count the turns when battling the bosses", "");
                 case 1: return tipContentFragment.newInstance("Use healing items when you have low health", "2");
                 case 2: return tipContentFragment.newInstance("Keep the status ailments constants during certain battles", "3");
                 case 3: return tipContentFragment.newInstance("Save before going into an important battle", "4");

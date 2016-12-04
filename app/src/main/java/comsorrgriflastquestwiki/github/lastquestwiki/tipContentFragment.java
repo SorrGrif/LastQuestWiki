@@ -72,10 +72,7 @@ public class tipContentFragment extends Fragment {
       View view =  inflater.inflate(R.layout.fragment_tip_content, container, false);
         if(mParam1 != null) {
             ((TextView) view.findViewById(R.id.tipText)).setText(mParam1);
-        }if (mParam2 != null){
-            ((TextView) view.findViewById(R.id.tipNumber)).setText(mParam2);
         }
-
         return view;
     }
 
