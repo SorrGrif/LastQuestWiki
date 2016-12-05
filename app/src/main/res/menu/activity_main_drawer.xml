@@ -2,44 +2,48 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_gameplay"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="GamePlay" />
-        <item
-            android:id="@+id/nav_puzzle"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Puzzles" />
-        <item
-            android:id="@+id/nav_items"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Items" />
-        <item
-            android:id="@+id/nav_tips"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tips" />
 
         <item
-            android:id="@+id/nav_tutorial"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tutorial" />
+            android:id="@+id/nav_classes"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="Classes" />
+
+
+        <item
+            android:id="@+id/nav_races"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="Races" />
+
+        <item
+            android:id="@+id/nav_items"
+            android:icon="@drawable/ic_build_black_24dp"
+            android:title="Items" />
+        <item
+            android:id="@+id/nav_puzzle"
+            android:icon="@drawable/ic_school_black_24dp"
+            android:title="Puzzle Solver" />
+        <item
+            android:id="@+id/nav_faq"
+            android:icon="@drawable/ic_poll_black_24dp"
+            android:title="FAQ" />
+        <item
+            android:id="@+id/nav_tips"
+            android:icon="@drawable/ic_announcement_black_24dp"
+            android:title="Tips" />
+        <item
+            android:id="@+id/nav_tutorials"
+            android:icon="@drawable/ic_play_arrow_black_24dp"
+            android:title="Tutorials" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_question_answer_black_24dp"
+            android:title="Contact Us" />
+
     </group>
 
 
 
 
 
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_faq"
-                android:icon="@drawable/ic_menu_share"
-                android:title="FAQ" />
-            <item
-                android:id="@+id/nav_contact"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Contact" />
-        </menu>
-    </item>
 
 </menu>
