@@ -4,9 +4,12 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 
 /**
@@ -26,6 +29,8 @@ public class archerFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    FragmentManager fm;
 
     private OnFragmentInteractionListener mListener;
 
@@ -64,7 +69,37 @@ public class archerFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_archer, container, false);
+        View view = inflater.inflate(R.layout.fragment_archer, container, false);
+
+
+        ImageView human = (ImageView) view.findViewById(R.id.humanImg);
+        ImageView elf = (ImageView) view.findViewById(R.id.elfImg);
+        fm = getActivity().getSupportFragmentManager();
+
+        human.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right);
+                ft.replace(R.id.mainFrame, new humanFragment());
+                ft.addToBackStack("");
+                ft.commit();
+            }
+        });
+
+        elf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right);
+                ft.replace(R.id.mainFrame, new elfFragment());
+                ft.addToBackStack("");
+                ft.commit();
+            }
+        });
+
+        return view;
+
     }
 
     // TODO: Rename method, update argument and hook method into UI event
