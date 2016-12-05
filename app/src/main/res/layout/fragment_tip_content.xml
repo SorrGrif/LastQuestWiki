@@ -25,7 +25,8 @@
         android:text="@string/hello_blank_fragment"
         android:gravity="center_vertical|center_horizontal"
         android:padding="10dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:fontFamily="casual" />
 
 
 

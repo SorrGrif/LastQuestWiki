@@ -13,7 +13,8 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Contact Information"
         android:id="@+id/textView3"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="casual" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -21,7 +22,8 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Send us an Email"
         android:id="@+id/textView4"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="casual" />
 
     <EditText
         android:layout_width="match_parent"
