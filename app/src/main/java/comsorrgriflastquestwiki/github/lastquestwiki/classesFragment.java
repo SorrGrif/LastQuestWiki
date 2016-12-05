@@ -4,9 +4,12 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 
 /**
@@ -26,6 +29,8 @@ public class classesFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    private FragmentManager fm;
 
     private OnFragmentInteractionListener mListener;
 
@@ -64,7 +69,91 @@ public class classesFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_classes, container, false);
+        View viwe = inflater.inflate(R.layout.fragment_classes, container, false);
+
+        // Inflate the layout for this fragment
+        View view =  inflater.inflate(R.layout.fragment_races, container, false);
+
+        //init imageviews
+        ImageView barbarian = (ImageView) view.findViewById(R.id.barbarianImg);
+        ImageView archer = (ImageView) view.findViewById(R.id.archerImg);
+        ImageView wizard = (ImageView) view.findViewById(R.id.wizardImg);
+        ImageView fighter = (ImageView) view.findViewById(R.id.fighterImg);
+
+        //init fragment manager
+        fm = getActivity().getSupportFragmentManager();
+
+        /**
+         * Event handler when the image of the barbarian is
+         * clicked the barbarian fragment opens
+         *
+         * @author Griffin Sorrentino
+         * @version 1.0
+         */
+        barbarian.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right);
+                ft.replace(R.id.mainFrame, new barbarianFragment());
+                ft.addToBackStack("");
+                ft.commit();
+            }
+        });
+        /**
+         * Event handler when the image of the archer is
+         * clicked the archer fragment opens
+         *
+         * @author Griffin Sorrentino
+         * @version 1.1
+         */
+        archer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right);
+                ft.replace(R.id.mainFrame, new archerFragment());
+                ft.addToBackStack("");
+                ft.commit();
+            }
+        });
+        /**
+         * Event handler when the image of the wizard is
+         * clicked the wizard fragment opens
+         *
+         * @author Griffin Sorrentino
+         * @version 1.1
+         */
+        wizard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right);
+                ft.replace(R.id.mainFrame, new wizardFragment());
+                ft.addToBackStack("");
+                ft.commit();
+            }
+        });
+        /**
+         * Event handler when the image of the fighter is
+         * clicked the fighter fragment opens
+         *
+         * @author Griffin Sorrentino
+         * @version 1.1
+         */
+        fighter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right);
+                ft.replace(R.id.mainFrame, new fighterFragment());
+                ft.addToBackStack("");
+                ft.commit();
+            }
+        });
+
+
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
