@@ -105,7 +105,7 @@ public class classesFragment extends Fragment {
          * clicked the archer fragment opens
          *
          * @author Griffin Sorrentino
-         * @version 1.1
+         * @version 1.0
          */
         archer.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -122,7 +122,7 @@ public class classesFragment extends Fragment {
          * clicked the wizard fragment opens
          *
          * @author Griffin Sorrentino
-         * @version 1.1
+         * @version 1.0
          */
         wizard.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -139,7 +139,7 @@ public class classesFragment extends Fragment {
          * clicked the fighter fragment opens
          *
          * @author Griffin Sorrentino
-         * @version 1.1
+         * @version 1.0
          */
         fighter.setOnClickListener(new View.OnClickListener() {
             @Override
