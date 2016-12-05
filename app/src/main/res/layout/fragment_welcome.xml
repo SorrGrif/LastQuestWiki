@@ -29,8 +29,9 @@
         android:layout_weight="1"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:fontFamily="casual"
-        android:textColor="@color/colorPrimary" />
+        android:textStyle="normal|bold|italic"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -39,6 +40,8 @@
         android:id="@+id/trademarkTxt"
         android:layout_gravity="center_horizontal"
         android:layout_weight="2.5"
-        android:fontFamily="casual" />
+        android:fontFamily="casual"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_red_dark" />
 
 </LinearLayout>
