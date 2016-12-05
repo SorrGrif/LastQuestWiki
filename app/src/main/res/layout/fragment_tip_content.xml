@@ -3,9 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="comsorrgriflastquestwiki.github.lastquestwiki.tipContentFragment"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tipNum"
+        android:layout_weight="1"
+        android:text="1"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
     <TextView
         android:layout_width="match_parent"

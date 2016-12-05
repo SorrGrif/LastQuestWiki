@@ -126,7 +126,7 @@ public class tipsFragment extends Fragment {
         public Fragment getItem(int position)
         {
             switch(position){
-                case 0: return tipContentFragment.newInstance("Make sure to count the turns when battling the bosses", "");
+                case 0: return tipContentFragment.newInstance("Make sure to count the turns when battling the bosses", "1");
                 case 1: return tipContentFragment.newInstance("Use healing items when you have low health", "2");
                 case 2: return tipContentFragment.newInstance("Keep the status ailments constants during certain battles", "3");
                 case 3: return tipContentFragment.newInstance("Save before going into an important battle", "4");

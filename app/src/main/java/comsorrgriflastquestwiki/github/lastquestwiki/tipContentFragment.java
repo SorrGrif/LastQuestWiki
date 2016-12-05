@@ -73,6 +73,9 @@ public class tipContentFragment extends Fragment {
         if(mParam1 != null) {
             ((TextView) view.findViewById(R.id.tipText)).setText(mParam1);
         }
+        if(mParam2 != null) {
+            ((TextView) view.findViewById(R.id.tipNum)).setText(mParam2);
+        }
         return view;
     }
 
