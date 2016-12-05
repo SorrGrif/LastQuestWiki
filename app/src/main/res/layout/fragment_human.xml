@@ -13,7 +13,11 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Human"
         android:id="@+id/humanLbl"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:fontFamily="monospace" />
 
     <ImageView
         android:layout_width="fill_parent"
@@ -28,7 +32,10 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Description"
         android:id="@+id/descriptionLbl"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/holo_blue_dark"
+        android:fontFamily="monospace" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -39,7 +46,9 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:fontFamily="casual" />
+        android:fontFamily="monospace"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="normal|bold" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -47,7 +56,9 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Base Stats"
         android:id="@+id/baseStatsLbl"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="monospace" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -68,7 +79,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Strength"
-                    android:id="@+id/strTxt" />
+                    android:id="@+id/strTxt"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
             </TableRow>
 
             <TableRow
@@ -80,7 +94,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Dexterity"
-                    android:id="@+id/dexTxt" />
+                    android:id="@+id/dexTxt"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
             </TableRow>
 
             <TableRow
@@ -92,7 +109,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Constitution"
-                    android:id="@+id/conTxt" />
+                    android:id="@+id/conTxt"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
             </TableRow>
 
             <TableRow
@@ -104,7 +124,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Intelligence"
-                    android:id="@+id/intTxt" />
+                    android:id="@+id/intTxt"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
             </TableRow>
 
             <TableRow
@@ -116,7 +139,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Wisdom"
-                    android:id="@+id/wisTxt" />
+                    android:id="@+id/wisTxt"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
             </TableRow>
 
             <TableRow
@@ -128,7 +154,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Charisma"
-                    android:id="@+id/chaTxt" />
+                    android:id="@+id/chaTxt"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
             </TableRow>
 
         </TableLayout>
@@ -147,7 +176,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="10"
-                    android:id="@+id/strStat" />
+                    android:id="@+id/strStat"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
             </TableRow>
 
             <TableRow
@@ -159,7 +191,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="9"
-                    android:id="@+id/dexStat" />
+                    android:id="@+id/dexStat"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
             </TableRow>
 
             <TableRow
@@ -171,7 +206,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="7"
-                    android:id="@+id/conStat" />
+                    android:id="@+id/conStat"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
             </TableRow>
 
             <TableRow
@@ -183,7 +221,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="8"
-                    android:id="@+id/intStat" />
+                    android:id="@+id/intStat"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
             </TableRow>
 
             <TableRow
@@ -195,7 +236,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="8"
-                    android:id="@+id/wisStat" />
+                    android:id="@+id/wisStat"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
             </TableRow>
 
             <TableRow
@@ -207,7 +251,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="6"
-                    android:id="@+id/chaStat" />
+                    android:id="@+id/chaStat"
+                    android:fontFamily="monospace"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
             </TableRow>
         </TableLayout>
     </LinearLayout>
