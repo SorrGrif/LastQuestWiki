@@ -27,7 +27,28 @@
                                      cat like reflexes and golem like stamina therefore start with more
                                      reflex and constitution however starting with lower strength.</string>
 
-    <string name="welcomeText">Welcome</string>
+    <string name="archerDescription">The Archer prefers to stay in the back of their group to take out
+                                     enemies from afar. They are skilled in stealth and assassinating.
+                                     An Archer is recommended for skilled players that have been playing
+                                     for a longer than average time.</string>
+
+    <string name="barbarianDescription">Barbarians are blood thirsty maniacs that only want to kill their
+                                        enemies. Barbarians can enter a frenzied rage giving them a boost
+                                        to Strength, Constitution and Dexterity however it lowers their
+                                        Wisdom and Intelligence.</string>
+
+    <string name="fighterDescription">A Fighter is a more balanced Barbarian, they favour striking their
+                                      opponents with skillful precise strikes rather than swinging an
+                                      axe around. The Fighter can be built to withstand enormous amounts
+                                      of damage, or to deal enormous amounts of damage.</string>
+
+    <string name="wizardDescription">The Wizard is an arcane caster, on a select few are able to learn
+                                     to spells a Wizard can cast, and even fewer are able to handle the power.
+                                     A Wizard is not good as soloing but instead working with the party to
+                                     disable foes and buff party members.</string>
+
+
+    <string name="welcomeDescription">Welcome</string>
 
     <string name="introText">This app is a wiki app for the Last Quest MMORPG made by RPG Inc. Please
                              select an option from the menu to navigate through</string>
