@@ -48,7 +48,7 @@
                                      disable foes and buff party members.</string>
 
 
-    <string name="welcomeDescription">Welcome</string>
+    <string name="welcomeText">Welcome</string>
 
     <string name="introText">This app is a wiki app for the Last Quest MMORPG made by RPG Inc. Please
                              select an option from the menu to navigate through</string>

@@ -68,11 +68,9 @@ public class classesFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View viwe = inflater.inflate(R.layout.fragment_classes, container, false);
 
         // Inflate the layout for this fragment
-        View view =  inflater.inflate(R.layout.fragment_races, container, false);
+        View view =  inflater.inflate(R.layout.fragment_classes, container, false);
 
         //init imageviews
         ImageView barbarian = (ImageView) view.findViewById(R.id.barbarianImg);
