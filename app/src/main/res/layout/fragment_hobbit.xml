@@ -15,7 +15,8 @@
         android:layout_gravity="center_horizontal"
         android:fontFamily="monospace"
         android:textSize="24sp"
-        android:textColor="@color/colorAccent" />
+        android:textColor="@color/colorAccent"
+        android:textStyle="normal|bold" />
 
     <ImageView
         android:layout_width="fill_parent"
@@ -34,7 +35,7 @@
         android:textColor="@color/colorAccent"
         android:fontFamily="monospace"
         android:textStyle="normal|bold"
-        android:textSize="14sp" />
+        android:textSize="16sp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -48,7 +49,7 @@
         android:fontFamily="monospace"
         android:textColor="@color/colorAccent"
         android:textStyle="normal|bold"
-        android:textSize="14sp" />
+        android:textSize="16sp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -56,7 +57,9 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Base Stats"
         android:id="@+id/baseStatsLbl"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:textStyle="normal|bold"
+        android:textColorLink="?attr/actionMenuTextColor" />
 
     <LinearLayout
         android:orientation="horizontal"
