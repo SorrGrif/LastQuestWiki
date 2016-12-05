@@ -82,7 +82,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Strength"
-                    android:id="@+id/strTxt" />
+                    android:id="@+id/strTxt"
+                    android:textColor="@android:color/background_dark" />
             </TableRow>
 
             <TableRow
@@ -94,7 +95,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Dexterity"
-                    android:id="@+id/dexTxt" />
+                    android:id="@+id/dexTxt"
+                    android:textColor="@android:color/background_dark" />
             </TableRow>
 
             <TableRow
@@ -106,7 +108,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Constitution"
-                    android:id="@+id/conTxt" />
+                    android:id="@+id/conTxt"
+                    android:textColor="@android:color/background_dark" />
             </TableRow>
 
             <TableRow
@@ -118,7 +121,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Intelligence"
-                    android:id="@+id/intTxt" />
+                    android:id="@+id/intTxt"
+                    android:textColor="@android:color/background_dark" />
             </TableRow>
 
             <TableRow
@@ -130,7 +134,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Wisdom"
-                    android:id="@+id/wisTxt" />
+                    android:id="@+id/wisTxt"
+                    android:textColor="@android:color/background_dark" />
             </TableRow>
 
             <TableRow
@@ -142,7 +147,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Charisma"
-                    android:id="@+id/chaTxt" />
+                    android:id="@+id/chaTxt"
+                    android:textColor="@android:color/background_dark" />
             </TableRow>
 
         </TableLayout>
@@ -161,7 +167,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="6"
-                    android:id="@+id/strStat" />
+                    android:id="@+id/strStat"
+                    android:textColor="@android:color/background_dark" />
             </TableRow>
 
             <TableRow
@@ -173,7 +180,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="18"
-                    android:id="@+id/dexStat" />
+                    android:id="@+id/dexStat"
+                    android:textColor="@android:color/background_dark" />
             </TableRow>
 
             <TableRow
@@ -185,7 +193,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="17"
-                    android:id="@+id/conStat" />
+                    android:id="@+id/conStat"
+                    android:textColor="@android:color/background_dark" />
             </TableRow>
 
             <TableRow
@@ -197,7 +206,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5"
-                    android:id="@+id/intStat" />
+                    android:id="@+id/intStat"
+                    android:textColor="@android:color/background_dark" />
             </TableRow>
 
             <TableRow
@@ -209,7 +219,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="6"
-                    android:id="@+id/wisStat" />
+                    android:id="@+id/wisStat"
+                    android:textColor="@android:color/background_dark" />
             </TableRow>
 
             <TableRow
@@ -221,7 +232,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="9"
-                    android:id="@+id/chaStat" />
+                    android:id="@+id/chaStat"
+                    android:textColor="@android:color/background_dark" />
             </TableRow>
         </TableLayout>
     </LinearLayout>
