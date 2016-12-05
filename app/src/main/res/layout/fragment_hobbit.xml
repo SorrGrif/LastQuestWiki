@@ -12,7 +12,10 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Hobbit"
         android:id="@+id/hobbitLbl"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="monospace"
+        android:textSize="24sp"
+        android:textColor="@color/colorAccent" />
 
     <ImageView
         android:layout_width="fill_parent"
@@ -27,7 +30,11 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Description"
         android:id="@+id/descriptionLbl"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="monospace"
+        android:textStyle="normal|bold"
+        android:textSize="14sp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -38,7 +45,10 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:fontFamily="sans-serif-condensed" />
+        android:fontFamily="monospace"
+        android:textColor="@color/colorAccent"
+        android:textStyle="normal|bold"
+        android:textSize="14sp" />
 
     <TextView
         android:layout_width="wrap_content"
