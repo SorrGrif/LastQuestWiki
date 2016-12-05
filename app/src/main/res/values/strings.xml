@@ -54,4 +54,5 @@
                              select an option from the menu to navigate through</string>
 
     <string name="copyrightText">&#169; RPG Inc.</string>
+    <string name="playableRaces">Playable Races</string>
 </resources>
