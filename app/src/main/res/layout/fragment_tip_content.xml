@@ -26,7 +26,8 @@
         android:gravity="center_vertical|center_horizontal"
         android:padding="10dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:fontFamily="casual" />
+        android:fontFamily="casual"
+        android:textColor="@color/colorPrimary" />
 
 
 
