@@ -75,7 +75,10 @@ public class archerFragment extends Fragment {
         ImageView human = (ImageView) view.findViewById(R.id.humanImg);
         ImageView elf = (ImageView) view.findViewById(R.id.elfImg);
         fm = getActivity().getSupportFragmentManager();
-
+        
+        //when the human image is clicked
+        //start an animation 
+        //and change the current frame to the human frame
         human.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -87,6 +90,9 @@ public class archerFragment extends Fragment {
             }
         });
 
+        //when the elf image is clicked
+        //start an animation 
+        //and change the current frame to the elf frame
         elf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -76,6 +76,9 @@ public class fighterFragment extends Fragment {
         ImageView dwarf = (ImageView) view.findViewById(R.id.dwarfImg);
         fm = getActivity().getSupportFragmentManager();
 
+        //when the human image is clicked
+        //start an animation 
+        //and change the current frame to the human frame
         human.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -87,6 +90,10 @@ public class fighterFragment extends Fragment {
             }
         });
 
+
+        //when the dwarf image is clicked
+        //start an animation 
+        //and change the current frame to the dwarf frame
         dwarf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
