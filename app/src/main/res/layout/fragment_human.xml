@@ -57,7 +57,7 @@
         android:text="Base Stats"
         android:id="@+id/baseStatsLbl"
         android:layout_gravity="center_horizontal"
-        android:textColor="@color/colorAccent"
+        android:textColor="@android:color/background_dark"
         android:fontFamily="monospace" />
 
     <LinearLayout
@@ -81,7 +81,7 @@
                     android:text="Strength"
                     android:id="@+id/strTxt"
                     android:fontFamily="monospace"
-                    android:textColor="@color/colorAccent"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="18sp" />
             </TableRow>
 
@@ -96,7 +96,7 @@
                     android:text="Dexterity"
                     android:id="@+id/dexTxt"
                     android:fontFamily="monospace"
-                    android:textColor="@color/colorAccent"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="18sp" />
             </TableRow>
 
@@ -111,7 +111,7 @@
                     android:text="Constitution"
                     android:id="@+id/conTxt"
                     android:fontFamily="monospace"
-                    android:textColor="@color/colorAccent"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="18sp" />
             </TableRow>
 
@@ -126,7 +126,7 @@
                     android:text="Intelligence"
                     android:id="@+id/intTxt"
                     android:fontFamily="monospace"
-                    android:textColor="@color/colorAccent"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="18sp" />
             </TableRow>
 
@@ -141,7 +141,7 @@
                     android:text="Wisdom"
                     android:id="@+id/wisTxt"
                     android:fontFamily="monospace"
-                    android:textColor="@color/colorAccent"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="18sp" />
             </TableRow>
 
@@ -156,7 +156,7 @@
                     android:text="Charisma"
                     android:id="@+id/chaTxt"
                     android:fontFamily="monospace"
-                    android:textColor="@color/colorAccent"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="18sp" />
             </TableRow>
 
@@ -178,7 +178,7 @@
                     android:text="10"
                     android:id="@+id/strStat"
                     android:fontFamily="monospace"
-                    android:textColor="@color/colorAccent"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="18sp" />
             </TableRow>
 
@@ -193,7 +193,7 @@
                     android:text="9"
                     android:id="@+id/dexStat"
                     android:fontFamily="monospace"
-                    android:textColor="@color/colorAccent"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="18sp" />
             </TableRow>
 
@@ -208,7 +208,7 @@
                     android:text="7"
                     android:id="@+id/conStat"
                     android:fontFamily="monospace"
-                    android:textColor="@color/colorAccent"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="18sp" />
             </TableRow>
 
@@ -223,7 +223,7 @@
                     android:text="8"
                     android:id="@+id/intStat"
                     android:fontFamily="monospace"
-                    android:textColor="@color/colorAccent"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="18sp" />
             </TableRow>
 
@@ -238,7 +238,7 @@
                     android:text="8"
                     android:id="@+id/wisStat"
                     android:fontFamily="monospace"
-                    android:textColor="@color/colorAccent"
+                    android:textColor="@android:color/background_dark"
                     android:textSize="18sp" />
             </TableRow>
 
