@@ -72,19 +72,19 @@ public class fighterFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_fighter, container, false);
 
 
-        ImageView human = (ImageView) view.findViewById(R.id.humanImg);
+        ImageView elf = (ImageView) view.findViewById(R.id.elfImg);
         ImageView dwarf = (ImageView) view.findViewById(R.id.dwarfImg);
         fm = getActivity().getSupportFragmentManager();
 
         //when the human image is clicked
         //start an animation 
         //and change the current frame to the human frame
-        human.setOnClickListener(new View.OnClickListener() {
+        elf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentTransaction ft = fm.beginTransaction();
                 ft.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right);
-                ft.replace(R.id.mainFrame, new humanFragment());
+                ft.replace(R.id.mainFrame, new elfFragment());
                 ft.addToBackStack("");
                 ft.commit();
             }
