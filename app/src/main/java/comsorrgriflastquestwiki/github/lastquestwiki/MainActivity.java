@@ -31,6 +31,10 @@ public class MainActivity extends AppCompatActivity
         elfFragment.OnFragmentInteractionListener,
         dwarfFragment.OnFragmentInteractionListener,
         hobbitFragment.OnFragmentInteractionListener,
+        archerFragment.OnFragmentInteractionListener,
+        barbarianFragment.OnFragmentInteractionListener,
+        wizardFragment.OnFragmentInteractionListener,
+        fighterFragment.OnFragmentInteractionListener,
         welcomeFragment.OnFragmentInteractionListener{
 
 
