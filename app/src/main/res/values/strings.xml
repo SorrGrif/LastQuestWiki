@@ -56,4 +56,5 @@
     <string name="copyrightText">&#169; RPG Inc.</string>
     <string name="playableRaces">Playable Races</string>
     <string name="playableClasses">Playable Classes</string>
+    <string name="baseTraitsLbl">Base Traits</string>
 </resources>
