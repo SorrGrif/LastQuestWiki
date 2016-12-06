@@ -10,8 +10,9 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/humanLayot">
+        android:layout_height="wrap_content"
+        android:id="@+id/humanLayot"
+        android:padding="@dimen/racePadding">
 
         <TextView
             android:layout_width="wrap_content"
