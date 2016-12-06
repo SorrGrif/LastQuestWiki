@@ -12,7 +12,9 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Dwarf"
         android:id="@+id/dwarfLbl"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:textStyle="normal|bold"
+        android:fontFamily="monospace" />
 
     <ImageView
         android:layout_width="fill_parent"
@@ -27,7 +29,11 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Description"
         android:id="@+id/descriptionLbl"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="monospace"
+        android:textSize="14sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/holo_green_dark" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -38,7 +44,10 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:fontFamily="sans-serif-smallcaps" />
+        android:fontFamily="monospace"
+        android:textSize="14sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/holo_green_dark" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -46,7 +55,11 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Base Stats"
         android:id="@+id/baseStatsLbl"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="monospace"
+        android:textSize="14sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/holo_green_dark" />
 
     <LinearLayout
         android:orientation="horizontal"
