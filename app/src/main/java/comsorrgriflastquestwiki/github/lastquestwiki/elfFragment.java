@@ -70,11 +70,14 @@ public class elfFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_elf, container, false);
-
+        //creating imageview variables for the archer and fighter pictures
         ImageView archer = (ImageView) view.findViewById(R.id.archerImg);
         ImageView fighter = (ImageView) view.findViewById(R.id.fighterImg);
         fm = getActivity().getSupportFragmentManager();
 
+        //when the archer image is clicked
+        //start an animation
+        //and change the current frame to the archer frame
         archer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -85,7 +88,9 @@ public class elfFragment extends Fragment {
                 ft.commit();
             }
         });
-
+        //when the fighter image is clicked
+        //start an animation
+        //and change the current frame to the fighter frame
         fighter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

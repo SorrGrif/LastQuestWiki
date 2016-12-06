@@ -75,6 +75,9 @@ public class dwarfFragment extends Fragment {
         ImageView fighter = (ImageView) view.findViewById(R.id.fighterImg);
         fm = getActivity().getSupportFragmentManager();
 
+        //when the barbarian image is clicked
+        //start an animation 
+        //and change the current frame to the barbarian frame
         barbarian.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -86,6 +89,9 @@ public class dwarfFragment extends Fragment {
             }
         });
 
+        //when the fighter image is clicked
+        //start an animation 
+        //and change the current frame to the fighter frame
         fighter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

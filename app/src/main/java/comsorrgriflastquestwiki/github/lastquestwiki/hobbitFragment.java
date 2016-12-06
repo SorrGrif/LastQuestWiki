@@ -74,6 +74,9 @@ public class hobbitFragment extends Fragment {
         ImageView wizard = (ImageView) view.findViewById(R.id.wizardImg);
         fm = getActivity().getSupportFragmentManager();
 
+        //when the wziard image is clicked
+        //start an animation 
+        //and change the current frame to the wziard frame
         wizard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
