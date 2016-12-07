@@ -4,7 +4,7 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Language</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -56,6 +56,8 @@
     <string name="copyrightText">&#169; RPG Inc.</string>
     <string name="playableRaces">Playable Races</string>
     <string name="playableClasses">Playable Classes</string>
+    <string name="selectLanguageLbl">Select Language</string>
+    <string name="baseTraitsLbl">Base Traits</string>
     <string name="humanLbl">Human</string>
     <string name="descriptionLbl">Description</string>
     <string name="baseStatsLbl">Base Stats</string>
@@ -72,4 +74,18 @@
     <string name="elfLbl">Elf</string>
     <string name="fighterLbl">Fighter</string>
     <string name="dwarfLbl">Dwarf</string>
+    <string name="soloAbilityLbl">Solo Ability</string>
+    <string name="defenseRatingLbl">Defense Rating</string>
+    <string name="damageRatingLbl">Damage Rating</string>
+    <string name="notableTraitLbl">Notable Traits</string>
+    <string name="averageLbl">Average</string>
+    <string name="highLbl">High</string>
+    <string name="rangerTraitsLbl">Stealth, Ranged Attack</string>
+    <string name="veryHighLbl">Very High</string>
+    <string name="barbarianNotableTraitsLbl">Rage, Damage</string>
+    <string name="veryHighOrAverageLbl">Very High or Average</string>
+    <string name="highOrLowLbl">High or Low</string>
+    <string name="fighterNotableTraitsLbl">Defense, Damage</string>
+    <string name="lowLbl">Low</string>
+    <string name="wizardNotableTraitsLbl">Spell Casting</string>
 </resources>

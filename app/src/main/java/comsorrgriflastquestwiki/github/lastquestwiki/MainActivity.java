@@ -1,5 +1,6 @@
 package comsorrgriflastquestwiki.github.lastquestwiki;
 
+import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -15,6 +16,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,
@@ -35,7 +38,8 @@ public class MainActivity extends AppCompatActivity
         barbarianFragment.OnFragmentInteractionListener,
         wizardFragment.OnFragmentInteractionListener,
         fighterFragment.OnFragmentInteractionListener,
-        welcomeFragment.OnFragmentInteractionListener{
+        welcomeFragment.OnFragmentInteractionListener,
+        languageFragment.OnFragmentInteractionListener{
 
 
     FragmentManager fm;
@@ -65,10 +69,14 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        fm = getSupportFragmentManager();
-        FragmentTransaction tran = fm.beginTransaction();
-        tran.replace(R.id.mainFrame, new welcomeFragment());
-        tran.commit();
+        //if theres no saved instant state, set to the default welcome frag
+        //this makes it so when you rotate device it doesnt reset to the default frag
+        if(savedInstanceState == null) {
+            fm = getSupportFragmentManager();
+            FragmentTransaction tran = fm.beginTransaction();
+            tran.replace(R.id.mainFrame, new welcomeFragment());
+            tran.commit();
+        }
     }
 
     @Override
@@ -97,7 +105,10 @@ public class MainActivity extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            fm = getSupportFragmentManager();
+            FragmentTransaction tran = fm.beginTransaction();
+            tran.replace(R.id.mainFrame, new languageFragment());
+            tran.commit();
         }
 
         return super.onOptionsItemSelected(item);
