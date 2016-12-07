@@ -260,7 +260,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/playableClasses"
             android:id="@+id/avRacesLbl"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textStyle="normal|bold" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -295,7 +296,10 @@
                     android:id="@+id/fighterLbl"
                     android:layout_row="3"
                     android:layout_column="0"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="normal|bold"
+                    android:textSize="12sp"
+                    android:fontFamily="monospace" />
             </LinearLayout>
 
             <LinearLayout
@@ -325,7 +329,10 @@
                     android:id="@+id/barbarianLbl"
                     android:layout_row="3"
                     android:layout_column="0"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="normal|bold"
+                    android:textSize="12sp"
+                    android:fontFamily="monospace" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
