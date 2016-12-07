@@ -12,14 +12,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/wizardLayout"
-        android:paddingLeft="5dp"
-        android:paddingRight="5dp">
+        android:padding="@dimen/classPadding">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Wizard"
+            android:text="@string/wizardLbl"
             android:id="@+id/wizardLbl"
             android:layout_gravity="center_horizontal" />
 
@@ -34,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Description"
+            android:text="@string/descriptionLbl"
             android:id="@+id/descriptionLbl"
             android:layout_gravity="center_horizontal" />
 
@@ -52,14 +51,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Base Stats"
-            android:id="@+id/baseStatsLbl"
+            android:text="@string/baseTraitsLbl"
+            android:id="@+id/baseTraitLbl"
             android:layout_gravity="center_horizontal" />
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content"
+            android:id="@+id/traitLayout">
 
 
             <TableLayout
@@ -75,7 +75,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Solo Ability"
+                        android:text="@string/soloAbilityLbl"
                         android:id="@+id/soloAbTxt" />
                 </TableRow>
 
@@ -87,7 +87,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Defense Rating"
+                        android:text="@string/defenseRatingLbl"
                         android:id="@+id/defenseRatTxt" />
                 </TableRow>
 
@@ -99,7 +99,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Damage Rating"
+                        android:text="@string/damageRatingLbl"
                         android:id="@+id/damageRatTxt" />
                 </TableRow>
 
@@ -111,7 +111,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Notable Traits"
+                        android:text="@string/notableTraitLbl"
                         android:id="@+id/notableTrTxt" />
                 </TableRow>
 
@@ -130,7 +130,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Low"
+                        android:text="@string/lowLbl"
                         android:id="@+id/soloAbStat" />
                 </TableRow>
 
@@ -142,7 +142,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Low"
+                        android:text="@string/lowLbl"
                         android:id="@+id/defenseRatStat" />
                 </TableRow>
 
@@ -154,7 +154,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Very High"
+                        android:text="@string/veryHighLbl"
                         android:id="@+id/damageRatStat" />
                 </TableRow>
 
@@ -166,7 +166,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Spell Casting"
+                        android:text="@string/wizardNotableTraitsLbl"
                         android:id="@+id/notableTrStat" />
                 </TableRow>
 
@@ -184,7 +184,8 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:id="@+id/playableRacesLayout">
 
             <LinearLayout
                 android:orientation="vertical"
@@ -209,7 +210,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hobbit"
+                    android:text="@string/hobbitLbl"
                     android:id="@+id/hobbitLbl"
                     android:layout_row="3"
                     android:layout_column="0"
