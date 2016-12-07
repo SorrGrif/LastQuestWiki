@@ -1,0 +1,85 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="comsorrgriflastquestwiki.github.lastquestwiki.contactFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/contactLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/contactUsLbl"
+            android:id="@+id/contactUsLbl"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/sendUsEmailLbl"
+            android:id="@+id/sendEmailLbl"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/subjectTxtField"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:hint="@string/subjectHint" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bodyTxtField"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:hint="@string/messageHint" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sendEmailBtnLbl"
+            android:id="@+id/emailButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/buttonPadding"
+            android:layout_marginRight="@dimen/buttonPadding" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/addContactBtnLbl"
+            android:id="@+id/contactButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/buttonPadding"
+            android:layout_marginRight="@dimen/buttonPadding" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/visitWebsiteBtnLbl"
+            android:id="@+id/websiteButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/buttonPadding"
+            android:layout_marginRight="@dimen/buttonPadding" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/viewMapBtnLbl"
+            android:id="@+id/mapButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/buttonPadding"
+            android:layout_marginRight="@dimen/buttonPadding" />
+    </LinearLayout>
+
+</ScrollView>
