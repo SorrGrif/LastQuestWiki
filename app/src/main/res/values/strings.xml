@@ -88,14 +88,13 @@
     <string name="fighterNotableTraitsLbl">Defense, Damage</string>
     <string name="lowLbl">Low</string>
     <string name="wizardNotableTraitsLbl">Spell Casting</string>
-
+    <string name="addContactBtnLbl">Add to contacts</string>
     <string name="contactUsLbl">Contact Us</string>
     <string name="sendEmailLbl">Send an Email</string>
     <string name="subjectHint">Subject</string>
     <string name="messageHint">Message</string>
     <string name="sendUsEmailLbl">Send Us An Email</string>
     <string name="sendEmailBtnLbl">Send Email</string>
-    <string name="addContactBtnLbl">Add to Contacts</string>
     <string name="visitWebsiteBtnLbl">Visit our Website</string>
     <string name="viewMapBtnLbl">view on map</string>
 </resources>
