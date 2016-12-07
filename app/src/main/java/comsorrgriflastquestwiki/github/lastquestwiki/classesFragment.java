@@ -81,6 +81,13 @@ public class classesFragment extends Fragment {
         //init fragment manager
         fm = getActivity().getSupportFragmentManager();
 
+        fm.addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
+            @Override
+            public void onBackStackChanged() {
+
+            }
+        });
+
         /**
          * Event handler when the image of the barbarian is
          * clicked the barbarian fragment opens

@@ -133,6 +133,9 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_races) {
             tran.replace(R.id.mainFrame, new racesFragment());
             tran.commit();
+        }if (id == R.id.nav_welcome) {
+            tran.replace(R.id.mainFrame, new welcomeFragment());
+            tran.commit();
         } else if (id == R.id.nav_contact) {
             tran.replace(R.id.mainFrame, new contactFragment());
             tran.commit();
