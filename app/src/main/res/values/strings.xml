@@ -88,4 +88,6 @@
     <string name="fighterNotableTraitsLbl">Defense, Damage</string>
     <string name="lowLbl">Low</string>
     <string name="wizardNotableTraitsLbl">Spell Casting</string>
+    <string name="addContactBtnLbl">Add to contacts</string>
+    <string name="contactUsLbl">Contact Us</string>
 </resources>
