@@ -18,10 +18,6 @@
             android:icon="@drawable/ic_build_black_24dp"
             android:title="Items" />
         <item
-            android:id="@+id/nav_puzzle"
-            android:icon="@drawable/ic_school_black_24dp"
-            android:title="Puzzle Solver" />
-        <item
             android:id="@+id/nav_faq"
             android:icon="@drawable/ic_poll_black_24dp"
             android:title="FAQ" />

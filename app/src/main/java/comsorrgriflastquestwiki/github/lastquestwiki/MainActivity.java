@@ -132,7 +132,6 @@ public class MainActivity extends AppCompatActivity
         FragmentTransaction tran = fm.beginTransaction();
         if (id == R.id.nav_races) {
             tran.replace(R.id.mainFrame, new racesFragment());
-
             tran.commit();
         } else if (id == R.id.nav_contact) {
             tran.replace(R.id.mainFrame, new contactFragment());
@@ -142,9 +141,6 @@ public class MainActivity extends AppCompatActivity
             tran.commit();
         }else if (id == R.id.nav_items) {
             tran.replace(R.id.mainFrame, new itemsFragment());
-            tran.commit();
-        }else if (id == R.id.nav_puzzle) {
-            tran.replace(R.id.mainFrame, new puzzleFragment());
             tran.commit();
         }else if (id == R.id.nav_faq) {
             tran.replace(R.id.mainFrame, new faqFragment());
