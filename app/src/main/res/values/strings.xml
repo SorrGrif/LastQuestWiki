@@ -8,4 +8,84 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="humanDescription">Born on a strange planet named \"Earth\", the Human is a very
+                                    versatile and well rounded race. Capable of soloing and being a
+                                    team player, the Human is recommended for new players.</string>
+
+    <string name="elfDescription">  Elves are known across realms as being the most beautiful
+                                    creatures in the universe. Elves have higher dexterity however
+                                    have lower strength from the trait of flight rather than fight.</string>
+
+    <string name="dwarfDescription">Dwarf\'s are not as beautiful as the Elf, therefore start with
+                                    lower charisma, intelligence and wisdom. Spending a lifetime living
+                                    in mountains and caves, the Dwarf is known to have super-human
+                                    strength and can take a million and one attacks from a foe.</string>
+
+    <string name="hobbitDescription">The Hobbit is a small creature that like to stay low to the ground
+                                     and are known to have a strange affinity with rings. Hobbits have
+                                     cat like reflexes and golem like stamina therefore start with more
+                                     reflex and constitution however starting with lower strength.</string>
+
+    <string name="archerDescription">The Archer prefers to stay in the back of their group to take out
+                                     enemies from afar. They are skilled in stealth and assassinating.
+                                     An Archer is recommended for skilled players that have been playing
+                                     for a longer than average time.</string>
+
+    <string name="barbarianDescription">Barbarians are blood thirsty maniacs that only want to kill their
+                                        enemies. Barbarians can enter a frenzied rage giving them a boost
+                                        to Strength, Constitution and Dexterity however it lowers their
+                                        Wisdom and Intelligence.</string>
+
+    <string name="fighterDescription">A Fighter is a more balanced Barbarian, they favour striking their
+                                      opponents with skillful precise strikes rather than swinging an
+                                      axe around. The Fighter can be built to withstand enormous amounts
+                                      of damage, or to deal enormous amounts of damage.</string>
+
+    <string name="wizardDescription">The Wizard is an arcane caster, on a select few are able to learn
+                                     to spells a Wizard can cast, and even fewer are able to handle the power.
+                                     A Wizard is not good as soloing but instead working with the party to
+                                     disable foes and buff party members.</string>
+
+
+    <string name="welcomeText">Welcome</string>
+
+    <string name="introText">This app is a wiki app for the Last Quest MMORPG made by RPG Inc. Please
+                             select an option from the menu to navigate through</string>
+
+    <string name="copyrightText">&#169; RPG Inc.</string>
+    <string name="playableRaces">Playable Races</string>
+    <string name="playableClasses">Playable Classes</string>
+    <string name="baseTraitsLbl">Base Traits</string>
+    <string name="humanLbl">Human</string>
+    <string name="descriptionLbl">Description</string>
+    <string name="baseStatsLbl">Base Stats</string>
+    <string name="strengthLbl">Strength</string>
+    <string name="dexterityLbl">Dexterity</string>
+    <string name="constitutionLbl">Constitution</string>
+    <string name="intelligenceLbl">Intelligence</string>
+    <string name="wisdomLbl">Wisdom</string>
+    <string name="charismaLbl">Charisma</string>
+    <string name="barbarianLbl">Barbarian</string>
+    <string name="archerLbl">Archer</string>
+    <string name="hobbitLbl">Hobbit</string>
+    <string name="wizardLbl">Wizard</string>
+    <string name="elfLbl">Elf</string>
+    <string name="fighterLbl">Fighter</string>
+    <string name="dwarfLbl">Dwarf</string>
+    <string name="soloAbilityLbl">Solo Ability</string>
+    <string name="defenseRatingLbl">Defense Rating</string>
+    <string name="damageRatingLbl">Damage Rating</string>
+    <string name="notableTraitLbl">Notable Traits</string>
+    <string name="averageLbl">Average</string>
+    <string name="highLbl">High</string>
+    <string name="rangerTraitsLbl">Stealth, Ranged Attack</string>
+    <string name="veryHighLbl">Very High</string>
+    <string name="barbarianNotableTraitsLbl">Rage, Damage</string>
+    <string name="veryHighOrAverageLbl">Very High or Average</string>
+    <string name="highOrLowLbl">High or Low</string>
+    <string name="fighterNotableTraitsLbl">Defense, Damage</string>
+    <string name="lowLbl">Low</string>
+    <string name="wizardNotableTraitsLbl">Spell Casting</string>
+    >>>>>>> races
 </resources>
