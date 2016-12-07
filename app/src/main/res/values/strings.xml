@@ -56,4 +56,13 @@
     <string name="copyrightText">&#169; RPG Inc.</string>
     <string name="playableRaces">Playable Races</string>
     <string name="playableClasses">Playable Classes</string>
+    <string name="contactUsLbl">Contact Us</string>
+    <string name="sendEmailLbl">Send an Email</string>
+    <string name="subjectHint">Subject</string>
+    <string name="messageHint">Message</string>
+    <string name="sendUsEmailLbl">Send Us An Email</string>
+    <string name="sendEmailBtnLbl">Send Email</string>
+    <string name="addContactBtnLbl">Add to Contacts</string>
+    <string name="visitWebsiteBtnLbl">Visit our Website</string>
+    <string name="viewMapBtnLbl">view on map</string>
 </resources>
