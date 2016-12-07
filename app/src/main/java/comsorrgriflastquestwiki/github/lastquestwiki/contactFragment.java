@@ -1,12 +1,28 @@
 package comsorrgriflastquestwiki.github.lastquestwiki;
 
 import android.content.Context;
+<<<<<<< HEAD
 import android.net.Uri;
 import android.os.Bundle;
+=======
+import android.content.Intent;
+import android.graphics.Color;
+import android.net.Uri;
+import android.os.Bundle;
+import android.provider.ContactsContract;
+import android.support.design.widget.Snackbar;
+>>>>>>> 51e7cacbfa4a20d7714f542ec223c6d3dd1a3de1
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+<<<<<<< HEAD
+=======
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
+import android.widget.EditText;
+>>>>>>> 51e7cacbfa4a20d7714f542ec223c6d3dd1a3de1
 
 
 /**
@@ -27,6 +43,15 @@ public class contactFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
+<<<<<<< HEAD
+=======
+    private EditText fromTxt;
+    private EditText subjectTxt;
+    private EditText bodyTxt;
+    private Animation shake;
+
+
+>>>>>>> 51e7cacbfa4a20d7714f542ec223c6d3dd1a3de1
     private OnFragmentInteractionListener mListener;
 
     public contactFragment() {
@@ -64,7 +89,142 @@ public class contactFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+<<<<<<< HEAD
         return inflater.inflate(R.layout.fragment_contact, container, false);
+=======
+        View view = inflater.inflate(R.layout.fragment_contact, container, false);
+
+        //init the shake anim
+        shake = AnimationUtils.loadAnimation(getActivity(), R.anim.shake);
+
+        //init all textfields from contact form
+        fromTxt = (EditText) view.findViewById(R.id.fromTxtField);
+        subjectTxt = (EditText) view.findViewById(R.id.subjectTxtField);
+        bodyTxt = (EditText) view.findViewById(R.id.bodyTxtField);
+
+        //setting hints for the textfields so end user knows what to enter
+        fromTxt.setHint("From");
+        subjectTxt.setHint("Subject");
+        bodyTxt.setHint("Message");
+
+        //init the buttons
+        Button sendBtn = (Button) view.findViewById(R.id.emailButton);
+        Button addContactBtn = (Button) view.findViewById(R.id.contactButton);
+        Button websiteBtn = (Button) view.findViewById(R.id.websiteButton);
+        Button mapBtn = (Button) view.findViewById(R.id.mapButton);
+
+        //create an action when send email button is clicked
+        sendBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //get the string entered from the from textfield
+                String from = fromTxt.getText().toString();
+
+                //declare booleans hasAt and hasDot to validate it is
+                //a valid email address
+                //eg. youremail@somesite.com <- valid email
+                //    youremailsomesite.com <- not valid
+                boolean hasAt = false;
+                boolean hasDot = false;
+
+                //substring through the string to find the @ and .
+                //and set hasAt and hasDot to true if found
+                for(int i = 0; i < from.length(); i++) {
+                    if (from.substring(i, i + 1).equals("@")) hasAt = true;
+                    if (from.substring(i, i + 1).equals(".")) hasDot = true;
+                }
+
+                //if either hasAt or hasDot is false shake the textifeld to notify
+                //the email address was incorrect
+                if(!hasAt || !hasDot)
+                {
+                    fromTxt.startAnimation(shake);
+                }
+                else
+                {
+                    //get text from the subject field and body field
+                    String subject = subjectTxt.getText().toString();
+                    String body = bodyTxt.getText().toString();
+
+                    //set default text if body and subject are empty
+                    if(subject.equals("")) subject = "Question about Last Quest Wiki app";
+                    if(body.equals("")) body = "My question about Last Quest Wiki app is...";
+
+                    //send the email
+                    Intent intent = new Intent(Intent.ACTION_SENDTO);
+                    intent.setData(Uri.parse("mailto:"));
+                    intent.putExtra(Intent.EXTRA_EMAIL, new String[] {from});
+                    intent.putExtra(Intent.EXTRA_SUBJECT, subject);
+                    intent.putExtra(Intent.EXTRA_TEXT, body);
+                    if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
+                        startActivity(intent);
+                    }
+                    else{
+                        Snackbar snackbar = Snackbar.make(getActivity().findViewById(android.R.id.content),
+                                "No installed software to complete the task", Snackbar.LENGTH_SHORT);
+                        snackbar.show();
+                    }
+                }
+
+
+            }
+        });
+
+        //create an action when add contact button is clicked
+        addContactBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_INSERT);
+                intent.setType(ContactsContract.Contacts.CONTENT_TYPE);
+                intent.putExtra(ContactsContract.Intents.Insert.NAME, "Last Quest Wiki Team");
+                intent.putExtra(ContactsContract.Intents.Insert.EMAIL, "lastquestwiki@lastquestwiki.com");
+                intent.putExtra(ContactsContract.Intents.Insert.PHONE, "+1(888)-888-8888");
+                if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
+                    startActivity(intent);
+                }
+                else{
+                    Snackbar snackbar = Snackbar.make(getActivity().findViewById(android.R.id.content),
+                            "No installed software to complete the task", Snackbar.LENGTH_SHORT);
+                    snackbar.show();
+                }
+            }
+        });
+
+        //create an action when visit website button is clicked
+        websiteBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri website = Uri.parse("https://www.lastquestwiki.com");
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(website);
+                if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
+                    startActivity(intent);
+                } else {
+                    Snackbar snackbar = Snackbar.make(getActivity().findViewById(android.R.id.content), "No installed software to complete the task", Snackbar.LENGTH_SHORT);
+                    snackbar.show();
+                }
+            }
+        });
+
+        //create an action when view on map button is clicked
+        mapBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Uri geoLocation = Uri.parse("geo:0,0?q=42.248013,-83.0185792(Last Quest Wiki HQ)");
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(geoLocation);
+                if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
+                    startActivity(intent);
+                }
+                else{
+                    Snackbar snackbar = Snackbar.make(getActivity().findViewById(android.R.id.content), "No installed software to complete the task", Snackbar.LENGTH_SHORT);
+                    snackbar.show();
+                }
+            }
+        });
+
+        return view;
+>>>>>>> 51e7cacbfa4a20d7714f542ec223c6d3dd1a3de1
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -105,4 +265,12 @@ public class contactFragment extends Fragment {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
+<<<<<<< HEAD
+=======
+
+    private void sendEmail(String from, String subject, String body)
+    {
+
+    }
+>>>>>>> 51e7cacbfa4a20d7714f542ec223c6d3dd1a3de1
 }

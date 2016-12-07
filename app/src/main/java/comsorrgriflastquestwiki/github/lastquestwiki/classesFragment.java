@@ -4,9 +4,18 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+<<<<<<< HEAD
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+=======
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+>>>>>>> 51e7cacbfa4a20d7714f542ec223c6d3dd1a3de1
 
 
 /**
@@ -27,6 +36,11 @@ public class classesFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
+<<<<<<< HEAD
+=======
+    private FragmentManager fm;
+
+>>>>>>> 51e7cacbfa4a20d7714f542ec223c6d3dd1a3de1
     private OnFragmentInteractionListener mListener;
 
     public classesFragment() {
@@ -63,8 +77,95 @@ public class classesFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+<<<<<<< HEAD
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_classes, container, false);
+=======
+
+        // Inflate the layout for this fragment
+        View view =  inflater.inflate(R.layout.fragment_classes, container, false);
+
+        //init imageviews
+        ImageView barbarian = (ImageView) view.findViewById(R.id.barbarianImg);
+        ImageView archer = (ImageView) view.findViewById(R.id.archerImg);
+        ImageView wizard = (ImageView) view.findViewById(R.id.wizardImg);
+        ImageView fighter = (ImageView) view.findViewById(R.id.fighterImg);
+
+        //init fragment manager
+        fm = getActivity().getSupportFragmentManager();
+
+        /**
+         * Event handler when the image of the barbarian is
+         * clicked the barbarian fragment opens
+         *
+         * @author Griffin Sorrentino
+         * @version 1.0
+         */
+        barbarian.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right);
+                ft.replace(R.id.mainFrame, new barbarianFragment());
+                ft.addToBackStack("");
+                ft.commit();
+            }
+        });
+        /**
+         * Event handler when the image of the archer is
+         * clicked the archer fragment opens
+         *
+         * @author Griffin Sorrentino
+         * @version 1.0
+         */
+        archer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right);
+                ft.replace(R.id.mainFrame, new archerFragment());
+                ft.addToBackStack("");
+                ft.commit();
+            }
+        });
+        /**
+         * Event handler when the image of the wizard is
+         * clicked the wizard fragment opens
+         *
+         * @author Griffin Sorrentino
+         * @version 1.0
+         */
+        wizard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right);
+                ft.replace(R.id.mainFrame, new wizardFragment());
+                ft.addToBackStack("");
+                ft.commit();
+            }
+        });
+        /**
+         * Event handler when the image of the fighter is
+         * clicked the fighter fragment opens
+         *
+         * @author Griffin Sorrentino
+         * @version 1.0
+         */
+        fighter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction ft = fm.beginTransaction();
+                ft.setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left, R.anim.enter_from_left, R.anim.exit_to_right);
+                ft.replace(R.id.mainFrame, new fighterFragment());
+                ft.addToBackStack("");
+                ft.commit();
+            }
+        });
+
+
+        return view;
+>>>>>>> 51e7cacbfa4a20d7714f542ec223c6d3dd1a3de1
     }
 
     // TODO: Rename method, update argument and hook method into UI event
