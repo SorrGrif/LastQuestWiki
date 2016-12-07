@@ -30,18 +30,19 @@ public class MainActivity extends AppCompatActivity
         puzzleFragment.OnFragmentInteractionListener,
         tutorialFragment.OnFragmentInteractionListener,
         tipsFragment.OnFragmentInteractionListener,
-        tipContentFragment.OnFragmentInteractionListener,
         itemsFragment.OnFragmentInteractionListener,
         humanFragment.OnFragmentInteractionListener,
         elfFragment.OnFragmentInteractionListener,
         dwarfFragment.OnFragmentInteractionListener,
         hobbitFragment.OnFragmentInteractionListener,
+        tipContentFragment.OnFragmentInteractionListener,
         archerFragment.OnFragmentInteractionListener,
         barbarianFragment.OnFragmentInteractionListener,
         wizardFragment.OnFragmentInteractionListener,
         fighterFragment.OnFragmentInteractionListener,
         welcomeFragment.OnFragmentInteractionListener,
         languageFragment.OnFragmentInteractionListener{
+
 
 
     FragmentManager fm;
@@ -132,6 +133,9 @@ public class MainActivity extends AppCompatActivity
         FragmentTransaction tran = fm.beginTransaction();
         if (id == R.id.nav_races) {
             tran.replace(R.id.mainFrame, new racesFragment());
+            tran.commit();
+        }if (id == R.id.nav_welcome) {
+            tran.replace(R.id.mainFrame, new welcomeFragment());
             tran.commit();
         } else if (id == R.id.nav_contact) {
             tran.replace(R.id.mainFrame, new contactFragment());

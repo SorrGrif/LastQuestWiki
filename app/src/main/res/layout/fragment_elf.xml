@@ -20,7 +20,10 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/elfLbl"
             android:id="@+id/elfLbl"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="monospace"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/background_dark" />
 
         <ImageView
             android:layout_width="fill_parent"
@@ -35,7 +38,9 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/descriptionLbl"
             android:id="@+id/descriptionLbl"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="monospace"
+            android:textColor="@android:color/background_dark" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -45,7 +50,9 @@
             android:id="@+id/descriptionTxt"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp" />
+            android:layout_marginRight="5dp"
+            android:fontFamily="monospace"
+            android:textColor="@android:color/background_dark" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -53,7 +60,9 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/baseStatsLbl"
             android:id="@+id/baseStatsLbl"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="monospace"
+            android:textColor="@android:color/background_dark"/>
 
         <LinearLayout
             android:orientation="horizontal"
@@ -76,7 +85,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/strengthLbl"
-                        android:id="@+id/strTxt" />
+                        android:id="@+id/strTxt"
+                        android:textColor="@android:color/background_dark"
+                        android:fontFamily="monospace"/>
                 </TableRow>
 
                 <TableRow
@@ -88,7 +99,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/dexterityLbl"
-                        android:id="@+id/dexTxt" />
+                        android:id="@+id/dexTxt"
+                        android:textColor="@android:color/background_dark"
+                        android:fontFamily="monospace"/>
                 </TableRow>
 
                 <TableRow
@@ -100,7 +113,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/constitutionLbl"
-                        android:id="@+id/conTxt" />
+                        android:id="@+id/conTxt"
+                        android:textColor="@android:color/background_dark"
+                        android:fontFamily="monospace"/>
                 </TableRow>
 
                 <TableRow
@@ -112,7 +127,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/intelligenceLbl"
-                        android:id="@+id/intTxt" />
+                        android:id="@+id/intTxt"
+                        android:textColor="@android:color/background_dark"
+                        android:fontFamily="monospace"/>
                 </TableRow>
 
                 <TableRow
@@ -124,7 +141,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/wisdomLbl"
-                        android:id="@+id/wisTxt" />
+                        android:id="@+id/wisTxt"
+                        android:textColor="@android:color/background_dark"
+                        android:fontFamily="monospace"/>
                 </TableRow>
 
                 <TableRow
@@ -136,7 +155,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/charismaLbl"
-                        android:id="@+id/chaTxt" />
+                        android:id="@+id/chaTxt"
+                        android:textColor="@android:color/background_dark"
+                        android:fontFamily="monospace"/>
                 </TableRow>
 
             </TableLayout>
@@ -155,7 +176,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="8"
-                        android:id="@+id/strStat" />
+                        android:id="@+id/strStat"
+                        android:textColor="@android:color/background_dark"
+                        android:fontFamily="monospace"/>
                 </TableRow>
 
                 <TableRow
@@ -168,7 +191,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="12"
-                        android:id="@+id/dexStat" />
+                        android:id="@+id/dexStat"
+                        android:textColor="@android:color/background_dark"
+                        android:fontFamily="monospace"/>
                 </TableRow>
 
                 <TableRow
@@ -180,7 +205,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="6"
-                        android:id="@+id/conStat" />
+                        android:id="@+id/conStat"
+                        android:textColor="@android:color/background_dark"
+                        android:fontFamily="monospace"/>
                 </TableRow>
 
                 <TableRow
@@ -192,7 +219,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="7"
-                        android:id="@+id/intStat" />
+                        android:id="@+id/intStat"
+                        android:textColor="@android:color/background_dark"
+                        android:fontFamily="monospace"/>
                 </TableRow>
 
                 <TableRow
@@ -204,7 +233,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="8"
-                        android:id="@+id/wisStat" />
+                        android:id="@+id/wisStat"
+                        android:textColor="@android:color/background_dark"
+                        android:fontFamily="monospace"/>
                 </TableRow>
 
                 <TableRow
@@ -216,7 +247,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="7"
-                        android:id="@+id/chaStat" />
+                        android:id="@+id/chaStat"
+                        android:textColor="@android:color/background_dark"
+                        android:fontFamily="monospace"/>
                 </TableRow>
             </TableLayout>
         </LinearLayout>
@@ -227,7 +260,10 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/playableClasses"
             android:id="@+id/avRacesLbl"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:textStyle="normal|bold"
+            android:fontFamily="monospace"
+            android:textColor="@android:color/background_dark" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -262,7 +298,10 @@
                     android:id="@+id/fighterLbl"
                     android:layout_row="3"
                     android:layout_column="0"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="normal|bold"
+                    android:fontFamily="monospace"
+                    android:textColor="@android:color/background_dark" />
             </LinearLayout>
 
             <LinearLayout
@@ -292,9 +331,13 @@
                     android:id="@+id/archerLbl"
                     android:layout_row="3"
                     android:layout_column="0"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="normal|bold"
+                    android:fontFamily="monospace"
+                    android:textColor="@android:color/background_dark" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
 </ScrollView>
+

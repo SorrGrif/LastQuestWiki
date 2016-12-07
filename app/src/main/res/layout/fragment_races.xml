@@ -1,3 +1,8 @@
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -43,7 +48,9 @@
                 android:id="@+id/humanTxt"
                 android:layout_row="1"
                 android:layout_column="0"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/background_dark" />
         </LinearLayout>
 
         <LinearLayout
@@ -75,7 +82,9 @@
                 android:id="@+id/elfTxt"
                 android:layout_row="1"
                 android:layout_column="1"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/background_dark" />
         </LinearLayout>
     </LinearLayout>
 
@@ -114,7 +123,9 @@
                 android:id="@+id/dwarfTxt"
                 android:layout_row="3"
                 android:layout_column="0"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/background_dark" />
         </LinearLayout>
 
         <LinearLayout
@@ -146,7 +157,9 @@
                 android:id="@+id/hobbitTxt"
                 android:layout_row="3"
                 android:layout_column="1"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/background_dark" />
         </LinearLayout>
 
     </LinearLayout>
