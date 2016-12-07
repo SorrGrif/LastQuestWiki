@@ -15,10 +15,11 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 
+
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link faqFragment.OnFragmentInteractionListener} interface
+ *
  * to handle interaction events.
  * Use the {@link faqFragment#newInstance} factory method to
  * create an instance of this fragment.
@@ -32,6 +33,7 @@ public class faqFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
     TextView faqFragmentTextView;
     ListView list;
 
@@ -72,6 +74,11 @@ public class faqFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+
+
+
+
         View view = inflater.inflate(R.layout.fragment_faq, container, false);
         faqFragmentTextView = (TextView) view.findViewById(R.id.questions);
         list = (ListView) view.findViewById(R.id.answers);
@@ -117,6 +124,7 @@ public class faqFragment extends Fragment {
             return convertView;
         }
     }
+
 
 
 

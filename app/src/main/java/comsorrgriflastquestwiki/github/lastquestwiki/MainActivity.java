@@ -30,8 +30,13 @@ public class MainActivity extends AppCompatActivity
         elfFragment.OnFragmentInteractionListener,
         dwarfFragment.OnFragmentInteractionListener,
         hobbitFragment.OnFragmentInteractionListener,
-        welcomeFragment.OnFragmentInteractionListener,
-        tipContentFragment.OnFragmentInteractionListener{
+        tipContentFragment.OnFragmentInteractionListener,
+        archerFragment.OnFragmentInteractionListener,
+        barbarianFragment.OnFragmentInteractionListener,
+        wizardFragment.OnFragmentInteractionListener,
+        fighterFragment.OnFragmentInteractionListener,
+        welcomeFragment.OnFragmentInteractionListener{
+
 
 
     FragmentManager fm;
@@ -126,7 +131,6 @@ public class MainActivity extends AppCompatActivity
             tran.replace(R.id.mainFrame, new faqFragment());
             tran.commit();
         }else if (id == R.id.nav_tips) {
-
             tran.replace(R.id.mainFrame, new tipsFragment());
             tran.commit();
         } else if (id == R.id.nav_tutorials) {

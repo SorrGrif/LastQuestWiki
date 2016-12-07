@@ -1,4 +1,4 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -6,248 +6,329 @@
     android:orientation="vertical">
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Dwarf"
-        android:id="@+id/dwarfLbl"
-        android:layout_gravity="center_horizontal"
-        android:textStyle="normal|bold"
-        android:fontFamily="monospace" />
-
-    <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="@dimen/raceImgSize"
-        android:id="@+id/dwarfImg"
-        android:src="@drawable/dwarf"
-        android:layout_marginBottom="10dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Description"
-        android:id="@+id/descriptionLbl"
-        android:layout_gravity="center_horizontal"
-        android:fontFamily="monospace"
-        android:textSize="14sp"
-        android:textStyle="normal|bold"
-        android:textColor="@android:color/holo_green_dark" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/dwarfDescription"
-        android:id="@+id/descriptionTxt"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
-        android:fontFamily="monospace"
-        android:textSize="14sp"
-        android:textStyle="normal|bold"
-        android:textColor="@android:color/holo_green_dark" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Base Stats"
-        android:id="@+id/baseStatsLbl"
-        android:layout_gravity="center_horizontal"
-        android:fontFamily="monospace"
-        android:textSize="14sp"
-        android:textStyle="normal|bold"
-        android:textColor="@android:color/background_dark" />
-
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="wrap_content"
+        android:id="@+id/dwarfLayout"
+        android:padding="@dimen/racePadding">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/dwarfLbl"
+            android:id="@+id/dwarfLbl"
+            android:layout_gravity="center_horizontal" />
 
-        <TableLayout
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/raceImgSize"
+            android:id="@+id/dwarfImg"
+            android:src="@drawable/dwarf"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/descriptionLbl"
+            android:id="@+id/descriptionLbl"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="monospace"
+            android:textSize="14sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/holo_green_dark"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/dwarfDescription"
+            android:id="@+id/descriptionTxt"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:fontFamily="monospace"
+            android:textSize="14sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/baseStatsLbl"
+            android:id="@+id/baseStatsLbl"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="monospace"
+            android:textSize="14sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/background_dark"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:id="@+id/statLayout">
 
-            <TableRow
+
+            <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/border">
+                android:layout_weight="1">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Strength"
-                    android:id="@+id/strTxt"
-                    android:fontFamily="monospace"
-                    android:textColor="@android:color/background_dark" />
-            </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border">
 
-            <TableRow
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/strengthLbl"
+                        android:id="@+id/strTxt"
+                        android:fontFamily="monospace"
+                        android:textColor="@android:color/background_dark"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dexterityLbl"
+                        android:id="@+id/dexTxt"
+                        android:fontFamily="monospace"
+                        android:textColor="@android:color/background_dark"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/constitutionLbl"
+                        android:id="@+id/conTxt"
+                        android:fontFamily="monospace"
+                        android:textColor="@android:color/background_dark"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/intelligenceLbl"
+                        android:id="@+id/intTxt"
+                        android:fontFamily="monospace"
+                        android:textColor="@android:color/background_dark"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wisdomLbl"
+                        android:id="@+id/wisTxt"
+                        android:fontFamily="monospace"
+                        android:textColor="@android:color/background_dark"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/charismaLbl"
+                        android:id="@+id/chaTxt"
+                        android:fontFamily="monospace"
+                        android:textColor="@android:color/background_dark"/>
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/border">
+                android:layout_weight="1">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Dexterity"
-                    android:id="@+id/dexTxt"
-                    android:fontFamily="monospace"
-                    android:textColor="@android:color/background_dark" />
-            </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border" >
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/border" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24"
+                        android:id="@+id/strStat"
+                        android:fontFamily="monospace"
+                        android:textColor="@android:color/background_dark"/>
+                </TableRow>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Constitution"
-                    android:id="@+id/conTxt"
-                    android:fontFamily="monospace"
-                    android:textColor="@android:color/background_dark" />
-            </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border" >
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/border" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12"
+                        android:id="@+id/dexStat"
+                        android:fontFamily="monospace"
+                        android:textColor="@android:color/background_dark"/>
+                </TableRow>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Intelligence"
-                    android:id="@+id/intTxt"
-                    android:fontFamily="monospace"
-                    android:textColor="@android:color/background_dark" />
-            </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border" >
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/border" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20"
+                        android:id="@+id/conStat"
+                        android:fontFamily="monospace"
+                        android:textColor="@android:color/background_dark"/>
+                </TableRow>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Wisdom"
-                    android:id="@+id/wisTxt"
-                    android:fontFamily="monospace"
-                    android:textColor="@android:color/background_dark" />
-            </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border" >
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/border" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:id="@+id/intStat"
+                        android:fontFamily="monospace"
+                        android:textColor="@android:color/background_dark"/>
+                </TableRow>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Charisma"
-                    android:id="@+id/chaTxt"
-                    android:fontFamily="monospace"
-                    android:textColor="@android:color/background_dark" />
-            </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border" >
 
-        </TableLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:id="@+id/wisStat"
+                        android:fontFamily="monospace"
+                        android:textColor="@android:color/background_dark"/>
+                </TableRow>
 
-        <TableLayout
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/border" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:id="@+id/chaStat"
+                        android:fontFamily="monospace"
+                        android:textColor="@android:color/background_dark"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/playableClasses"
+            android:id="@+id/avRacesLbl"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:id="@+id/playableClassesLayout">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/border" >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:layout_weight="1"
+                android:id="@+id/fighterLayout">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="24"
-                    android:id="@+id/strStat"
-                    android:fontFamily="monospace"
-                    android:textColor="@android:color/background_dark" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/border" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="12"
-                    android:id="@+id/dexStat"
-                    android:fontFamily="monospace"
-                    android:textColor="@android:color/background_dark" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/border" >
+                <ImageView
+                    android:layout_width="@dimen/raceImgSize"
+                    android:layout_height="@dimen/raceImgSize"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:src="@drawable/fighter"
+                    android:layout_marginLeft="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/image_border"
+                    android:id="@+id/fighterImg" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="20"
-                    android:id="@+id/conStat"
-                    android:fontFamily="monospace"
-                    android:textColor="@android:color/background_dark" />
-            </TableRow>
+                    android:text="@string/fighterLbl"
+                    android:id="@+id/fighterLbl"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/border" >
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:layout_weight="1"
+                android:id="@+id/linearLayout2" >
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="3"
-                    android:id="@+id/intStat"
-                    android:fontFamily="monospace"
-                    android:textColor="@android:color/background_dark" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/border" >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="4"
-                    android:id="@+id/wisStat"
-                    android:fontFamily="monospace"
-                    android:textColor="@android:color/background_dark" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/border" >
+                <ImageView
+                    android:layout_width="@dimen/raceImgSize"
+                    android:layout_height="@dimen/raceImgSize"
+                    android:id="@+id/barbarianImg"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:src="@drawable/barbarian"
+                    android:layout_marginLeft="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/image_border" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="2"
-                    android:id="@+id/chaStat"
-                    android:fontFamily="monospace"
-                    android:textColor="@android:color/background_dark" />
-            </TableRow>
-        </TableLayout>
+                    android:text="@string/barbarianLbl"
+                    android:id="@+id/barbarianLbl"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 
 
-</LinearLayout>
+</ScrollView>
