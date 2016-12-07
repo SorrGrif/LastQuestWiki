@@ -26,8 +26,8 @@
     <string name="fighterNotableTraitsLbl">Défense, Dégâts</string>
     <string name="highLbl">Haute</string>
     <string name="highOrLowLbl">Haut ou bas</string>
-    <string name="hobbitDescription">Le Hobbit est une petite créature qui aiment rester bas au sol et sont connus pour avoir une étrange affinité avec les anneaux. Hobbits ont chat comme des réflexes et golem comme l\'endurance donc commencer avec plus de dextérité et de la constitution mais à partir de plus faible force.</string>
-    <string name="hobbitLbl">Hobbit</string>
+    <string name="halflingDescription">Le Halfling est une petite créature qui aiment rester bas au sol et sont connus pour avoir une étrange affinité avec les anneaux. Halflings ont chat comme des réflexes et golem comme l\'endurance donc commencer avec plus de dextérité et de la constitution mais à partir de plus faible force.</string>
+    <string name="halflingLbl">Halfling</string>
     <string name="humanDescription">Né sur une étrange planète nommée \"Terre\", l\'Humain est une race très polyvalente et bien arrondie. Capable de jouer solo et d\'être un joueur d\'équipe, l\'humain est recommandé pour les nouveaux joueurs.</string>
     <string name="humanLbl">Humain</string>
     <string name="intelligenceLbl">Intelligence</string>

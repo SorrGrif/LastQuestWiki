@@ -23,8 +23,8 @@
                                     in mountains and caves, the Dwarf is known to have super-human
                                     strength and can take a million and one attacks from a foe.</string>
 
-    <string name="hobbitDescription">The Hobbit is a small creature that like to stay low to the ground
-                                     and are known to have a strange affinity with rings. Hobbits have
+    <string name="halflingDescription">The Halfling is a small creature that like to stay low to the ground
+                                     and are known to have a strange affinity with rings. Halflings have
                                      cat like reflexes and golem like stamina therefore start with more
                                      reflex and constitution however starting with lower strength.</string>
 
@@ -70,7 +70,7 @@
     <string name="charismaLbl">Charisma</string>
     <string name="barbarianLbl">Barbarian</string>
     <string name="archerLbl">Archer</string>
-    <string name="hobbitLbl">Hobbit</string>
+    <string name="halflingLbl">Halfling</string>
     <string name="wizardLbl">Wizard</string>
     <string name="elfLbl">Elf</string>
     <string name="fighterLbl">Fighter</string>

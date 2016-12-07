@@ -254,7 +254,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/hobbitLbl"
+                    android:text="@string/halflingLbl"
                     android:id="@+id/hobbitLbl"
                     android:layout_row="3"
                     android:layout_column="0"
