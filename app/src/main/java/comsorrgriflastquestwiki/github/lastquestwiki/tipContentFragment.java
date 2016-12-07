@@ -69,6 +69,12 @@ public class tipContentFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+
+        //Creates the parameters for the tips fragment
+        //Calls the id from the tipscontentfragment
+        //Adds both parameters to the return statement inside the tip fragment
+
       View view =  inflater.inflate(R.layout.fragment_tip_content, container, false);
         if(mParam1 != null) {
             ((TextView) view.findViewById(R.id.tipText)).setText(mParam1);

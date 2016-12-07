@@ -92,7 +92,8 @@
                         android:text="@string/strengthLbl"
                         android:id="@+id/strTxt"
                         android:fontFamily="monospace"
-                        android:textColor="@android:color/background_dark"/>
+                        android:textColor="@android:color/background_dark"
+                        android:textColorHighlight="@android:color/background_dark" />
                 </TableRow>
 
                 <TableRow
@@ -106,7 +107,8 @@
                         android:text="@string/dexterityLbl"
                         android:id="@+id/dexTxt"
                         android:fontFamily="monospace"
-                        android:textColor="@android:color/background_dark"/>
+                        android:textColor="@android:color/background_dark"
+                        android:textColorHighlight="@android:color/background_dark" />
                 </TableRow>
 
                 <TableRow
@@ -120,7 +122,8 @@
                         android:text="@string/constitutionLbl"
                         android:id="@+id/conTxt"
                         android:fontFamily="monospace"
-                        android:textColor="@android:color/background_dark"/>
+                        android:textColor="@android:color/background_dark"
+                        android:textColorHighlight="@android:color/background_dark" />
                 </TableRow>
 
                 <TableRow
@@ -134,7 +137,8 @@
                         android:text="@string/intelligenceLbl"
                         android:id="@+id/intTxt"
                         android:fontFamily="monospace"
-                        android:textColor="@android:color/background_dark"/>
+                        android:textColor="@android:color/background_dark"
+                        android:textColorHighlight="@android:color/background_dark" />
                 </TableRow>
 
                 <TableRow
@@ -148,7 +152,8 @@
                         android:text="@string/wisdomLbl"
                         android:id="@+id/wisTxt"
                         android:fontFamily="monospace"
-                        android:textColor="@android:color/background_dark"/>
+                        android:textColor="@android:color/background_dark"
+                        android:textColorHighlight="@android:color/background_dark" />
                 </TableRow>
 
                 <TableRow
@@ -162,7 +167,8 @@
                         android:text="@string/charismaLbl"
                         android:id="@+id/chaTxt"
                         android:fontFamily="monospace"
-                        android:textColor="@android:color/background_dark"/>
+                        android:textColor="@android:color/background_dark"
+                        android:textColorHighlight="@android:color/background_dark" />
                 </TableRow>
 
             </TableLayout>
@@ -183,7 +189,8 @@
                         android:text="24"
                         android:id="@+id/strStat"
                         android:fontFamily="monospace"
-                        android:textColor="@android:color/background_dark"/>
+                        android:textColor="@android:color/background_dark"
+                        android:textColorHighlight="@android:color/background_dark" />
                 </TableRow>
 
                 <TableRow
@@ -197,7 +204,8 @@
                         android:text="12"
                         android:id="@+id/dexStat"
                         android:fontFamily="monospace"
-                        android:textColor="@android:color/background_dark"/>
+                        android:textColor="@android:color/background_dark"
+                        android:textColorHighlight="@android:color/background_dark" />
                 </TableRow>
 
                 <TableRow
@@ -211,7 +219,8 @@
                         android:text="20"
                         android:id="@+id/conStat"
                         android:fontFamily="monospace"
-                        android:textColor="@android:color/background_dark"/>
+                        android:textColor="@android:color/background_dark"
+                        android:textColorHighlight="@android:color/background_dark" />
                 </TableRow>
 
                 <TableRow
@@ -225,7 +234,8 @@
                         android:text="3"
                         android:id="@+id/intStat"
                         android:fontFamily="monospace"
-                        android:textColor="@android:color/background_dark"/>
+                        android:textColor="@android:color/background_dark"
+                        android:textColorHighlight="@android:color/background_dark" />
                 </TableRow>
 
                 <TableRow
@@ -239,7 +249,8 @@
                         android:text="4"
                         android:id="@+id/wisStat"
                         android:fontFamily="monospace"
-                        android:textColor="@android:color/background_dark"/>
+                        android:textColor="@android:color/background_dark"
+                        android:textColorHighlight="@android:color/background_dark" />
                 </TableRow>
 
                 <TableRow
@@ -253,7 +264,8 @@
                         android:text="2"
                         android:id="@+id/chaStat"
                         android:fontFamily="monospace"
-                        android:textColor="@android:color/background_dark"/>
+                        android:textColor="@android:color/background_dark"
+                        android:textColorHighlight="@android:color/background_dark" />
                 </TableRow>
             </TableLayout>
         </LinearLayout>
