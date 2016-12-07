@@ -54,7 +54,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="classesFragment.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="classesFragment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/comsorrgriflastquestwiki/github/lastquestwiki/classesFragment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -63,6 +63,19 @@
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fragment_archer.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_archer.xml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="-918">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
           </provider>
         </entry>
       </file>
@@ -1675,6 +1688,7 @@
         <option value="$PROJECT_DIR$/app/src/main/java/comsorrgriflastquestwiki/github/lastquestwiki/contactFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/comsorrgriflastquestwiki/github/lastquestwiki/racesFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/comsorrgriflastquestwiki/github/lastquestwiki/classesFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_archer.xml" />
       </list>
     </option>
   </component>
@@ -1897,6 +1911,7 @@
   <component name="PropertiesComponent">
     <property name="UI_DESIGNER_EDITOR_MODE.NlPaletteManager-NlPreviewForm.SHOW" value="false" />
     <property name="device.picker.selection" value="Nexus_5X_API_23" />
+    <property name="UI_DESIGNER_EDITOR_MODE.NlPaletteManager-NlEditorPanel.WIDTH" value="194" />
   </component>
   <component name="RunManager" selected="Android App.app">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
@@ -2258,25 +2273,25 @@
         <state relative-caret-position="295">
           <caret line="333" column="0" selection-start-line="333" selection-start-column="0" selection-end-line="333" selection-end-column="0" />
           <folding>
-            <element signature="e#573#593#0" expanded="true" />
-            <element signature="e#808#824#0" expanded="true" />
-            <element signature="e#1107#1127#0" expanded="true" />
-            <element signature="e#1468#1492#0" expanded="true" />
-            <element signature="e#1903#1927#0" expanded="true" />
-            <element signature="e#2426#2448#0" expanded="true" />
-            <element signature="e#3425#3446#0" expanded="true" />
-            <element signature="e#4044#4066#0" expanded="true" />
-            <element signature="e#4665#4690#0" expanded="true" />
-            <element signature="e#5289#5314#0" expanded="true" />
-            <element signature="e#5913#5932#0" expanded="true" />
-            <element signature="e#6531#6552#0" expanded="true" />
-            <element signature="e#10899#10924#0" expanded="true" />
-            <element signature="e#11662#11682#0" expanded="true" />
-            <element signature="e#11725#11745#0" expanded="true" />
-            <element signature="e#12291#12311#0" expanded="true" />
-            <element signature="e#12965#12985#0" expanded="true" />
-            <element signature="e#13028#13048#0" expanded="true" />
-            <element signature="e#13592#13611#0" expanded="true" />
+            <element signature="e#573#593#0" expanded="false" />
+            <element signature="e#808#824#0" expanded="false" />
+            <element signature="e#1107#1127#0" expanded="false" />
+            <element signature="e#1468#1492#0" expanded="false" />
+            <element signature="e#1903#1927#0" expanded="false" />
+            <element signature="e#2426#2448#0" expanded="false" />
+            <element signature="e#3425#3446#0" expanded="false" />
+            <element signature="e#4044#4066#0" expanded="false" />
+            <element signature="e#4665#4690#0" expanded="false" />
+            <element signature="e#5289#5314#0" expanded="false" />
+            <element signature="e#5913#5932#0" expanded="false" />
+            <element signature="e#6531#6552#0" expanded="false" />
+            <element signature="e#10899#10924#0" expanded="false" />
+            <element signature="e#11662#11682#0" expanded="false" />
+            <element signature="e#11725#11745#0" expanded="false" />
+            <element signature="e#12291#12311#0" expanded="false" />
+            <element signature="e#12965#12985#0" expanded="false" />
+            <element signature="e#13028#13048#0" expanded="false" />
+            <element signature="e#13592#13611#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2392,9 +2407,9 @@
         <state relative-caret-position="1309">
           <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3363#3682#0" expanded="true" />
-            <element signature="e#3681#3682#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3363#3682#0" expanded="false" />
+            <element signature="e#3681#3682#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2439,9 +2454,9 @@
         <state relative-caret-position="-1691">
           <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2655#2686#0" expanded="true" />
-            <element signature="e#2688#2720#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#2655#2686#0" expanded="false" />
+            <element signature="e#2688#2720#0" expanded="false" />
             <element signature="e#4169#4212#0" expanded="false" />
           </folding>
         </state>
@@ -2492,6 +2507,17 @@
             <element signature="imports" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_archer.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-918">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
   </component>
