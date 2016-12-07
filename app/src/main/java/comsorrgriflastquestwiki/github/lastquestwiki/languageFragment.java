@@ -1,6 +1,7 @@
 package comsorrgriflastquestwiki.github.lastquestwiki;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.net.Uri;
@@ -82,12 +83,17 @@ public class languageFragment extends Fragment {
         final Configuration con = new Configuration(resources.getConfiguration());
 
         this.getResources().updateConfiguration(con, getActivity().getResources().getDisplayMetrics());
+        final SharedPreferences.Editor prefEdit = getActivity().getPreferences(Context.MODE_APPEND).edit();
+
 
         englishButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 con.locale = Locale.ENGLISH;
                 resources.updateConfiguration(con, resources.getDisplayMetrics());
+                prefEdit.putString("lang", con.locale.getLanguage());
+                prefEdit.commit();
+
             }
         });
 
@@ -96,9 +102,12 @@ public class languageFragment extends Fragment {
             public void onClick(View v) {
                 con.locale = Locale.FRENCH;
                 resources.updateConfiguration(con, resources.getDisplayMetrics());
+                prefEdit.putString("lang", con.locale.getLanguage());
+                prefEdit.commit();
 
             }
         });
+
 
         return view;
     }

@@ -1,5 +1,7 @@
 package comsorrgriflastquestwiki.github.lastquestwiki;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.net.Uri;
 import android.os.Bundle;
@@ -50,6 +52,12 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        //this retrieves the users set language
+        SharedPreferences pref = getPreferences(Context.MODE_APPEND);
+        String lang = pref.getString("lang", "en");
+        getResources().getConfiguration().locale = new Locale(lang);
+        getResources().updateConfiguration(getResources().getConfiguration(), getResources().getDisplayMetrics());
 
 //        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
@@ -124,6 +132,7 @@ public class MainActivity extends AppCompatActivity
         FragmentTransaction tran = fm.beginTransaction();
         if (id == R.id.nav_races) {
             tran.replace(R.id.mainFrame, new racesFragment());
+
             tran.commit();
         } else if (id == R.id.nav_contact) {
             tran.replace(R.id.mainFrame, new contactFragment());
