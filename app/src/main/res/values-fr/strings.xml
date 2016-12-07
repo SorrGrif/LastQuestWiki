@@ -19,7 +19,7 @@
     <string name="dexterityLbl">Dextérité</string>
     <string name="dwarfDescription">Nains ne sont pas aussi belle que l\'Elfe, donc commencer par le bas charisme, l\'intelligence et la sagesse. Passant une vie vivant dans les montagnes et les grottes, le Nain est connu pour avoir la force super-humaine et peut prendre un million et une attaques d\'un ennemi.</string>
     <string name="dwarfLbl">Nain</string>
-    <string name="elfDescription">Les DwarfaElves sont connus dans les royaumes comme étant les plus belles créatures de l\'univers. Les elfes ont une dextérité plus élevée, mais ont une plus faible force du trait de vol plutôt que de combattre....</string>
+    <string name="elfDescription">Elves sont connus dans les royaumes comme étant les plus belles créatures de l\'univers. Les elfes ont une dextérité plus élevée, mais ont une plus faible force du trait de vol plutôt que de combattre....</string>
     <string name="elfLbl">Elfe</string>
     <string name="fighterDescription">Un combattant est un barbare plus équilibré, ils préfèrent frapper leurs adversaires avec des grèves précises habiles plutôt que de balancer une hache autour. Le combattant peut être construit pour résister à d\'énormes quantités de dommages, ou de traiter d\'énormes quantités de dommages.</string>
     <string name="fighterLbl">Combattant</string>
