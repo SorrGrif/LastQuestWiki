@@ -264,7 +264,8 @@
             android:id="@+id/avRacesLbl"
             android:layout_gravity="center_horizontal"
             android:textStyle="normal|bold"
-            android:fontFamily="monospace" />
+            android:fontFamily="monospace"
+            android:textColor="@android:color/background_dark" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -302,7 +303,8 @@
                     android:layout_gravity="center_horizontal"
                     android:textStyle="normal|bold"
                     android:textSize="14sp"
-                    android:fontFamily="monospace" />
+                    android:fontFamily="monospace"
+                    android:textColor="@android:color/background_dark" />
             </LinearLayout>
 
             <LinearLayout
@@ -335,7 +337,8 @@
                     android:layout_gravity="center_horizontal"
                     android:textStyle="normal|bold"
                     android:textSize="14sp"
-                    android:fontFamily="monospace" />
+                    android:fontFamily="monospace"
+                    android:textColor="@android:color/background_dark" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

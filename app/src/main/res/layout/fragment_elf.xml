@@ -22,7 +22,8 @@
             android:id="@+id/elfLbl"
             android:layout_gravity="center_horizontal"
             android:fontFamily="monospace"
-            android:textStyle="normal|bold"/>
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/background_dark" />
 
         <ImageView
             android:layout_width="fill_parent"
@@ -261,7 +262,8 @@
             android:id="@+id/avRacesLbl"
             android:layout_gravity="center_horizontal"
             android:textStyle="normal|bold"
-            android:fontFamily="monospace" />
+            android:fontFamily="monospace"
+            android:textColor="@android:color/background_dark" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -298,7 +300,8 @@
                     android:layout_column="0"
                     android:layout_gravity="center_horizontal"
                     android:textStyle="normal|bold"
-                    android:fontFamily="monospace" />
+                    android:fontFamily="monospace"
+                    android:textColor="@android:color/background_dark" />
             </LinearLayout>
 
             <LinearLayout
@@ -330,7 +333,8 @@
                     android:layout_column="0"
                     android:layout_gravity="center_horizontal"
                     android:textStyle="normal|bold"
-                    android:fontFamily="monospace" />
+                    android:fontFamily="monospace"
+                    android:textColor="@android:color/background_dark" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
