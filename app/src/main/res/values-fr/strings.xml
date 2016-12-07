@@ -47,4 +47,14 @@
     <string name="wizardDescription">L\'Assistant est un lanceur d\'arcane, sur un certain nombre sont en mesure d\'apprendre à des sorts d\'un magicien peut couler, et encore moins sont en mesure de gérer la puissance. Un magicien n\'est pas bon en tant que soliste mais travaille plutôt avec la partie pour désactiver des ennemis et des membres de partie de buff.</string>
     <string name="wizardLbl">sorcier</string>
     <string name="wizardNotableTraitsLbl">Casting de sorts</string>
+    <string name="addContactBtnLbl">Ajouter aux contacts</string>
+    <string name="contactUsLbl">Contactez nous</string>
+    <string name="messageHint">Message</string>
+    <string name="selectLanguageLbl">Choisir la langue</string>
+    <string name="sendEmailBtnLbl">Envoyer un email</string>
+    <string name="sendEmailLbl">Envoyer un e-mail</string>
+    <string name="sendUsEmailLbl">Envoyez-nous un e-mail</string>
+    <string name="subjectHint">Assujettir</string>
+    <string name="viewMapBtnLbl">Voir sur la carte</string>
+    <string name="visitWebsiteBtnLbl">Visitez notre site Internet</string>
 </resources>

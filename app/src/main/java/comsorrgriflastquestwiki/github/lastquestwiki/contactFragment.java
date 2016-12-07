@@ -86,10 +86,6 @@ public class contactFragment extends Fragment {
         subjectTxt = (EditText) view.findViewById(R.id.subjectTxtField);
         bodyTxt = (EditText) view.findViewById(R.id.bodyTxtField);
 
-        //setting hints for the textfields so end user knows what to enter
-        subjectTxt.setHint("Subject");
-        bodyTxt.setHint("Message");
-
         //init the buttons
         Button sendBtn = (Button) view.findViewById(R.id.emailButton);
         Button addContactBtn = (Button) view.findViewById(R.id.contactButton);
