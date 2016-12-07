@@ -5,6 +5,8 @@ package comsorrgriflastquestwiki.github.lastquestwiki;
  */
 
 public class FaqItem {
+    //Getter and setter for the faq fragment
+
     private String question;
     private String answer;
 

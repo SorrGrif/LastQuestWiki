@@ -72,6 +72,12 @@ public class tipsFragment extends Fragment {
     }
 
     @Override
+
+    //Calls the id from the fragment
+    // Grabs the information from the tips content
+    //When swipe it displays a different tip
+
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view =  inflater.inflate(R.layout.fragment_tips, container, false);

@@ -78,7 +78,9 @@ public class faqFragment extends Fragment {
 
 
 
-
+            //Calls the faqitem
+            //Gets the id from the faq fragment
+            //When clicked it displays the answers
         View view = inflater.inflate(R.layout.fragment_faq, container, false);
         faqFragmentTextView = (TextView) view.findViewById(R.id.questions);
         list = (ListView) view.findViewById(R.id.answers);

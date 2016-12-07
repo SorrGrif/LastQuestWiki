@@ -60,7 +60,8 @@
                 android:id="@+id/barbarianTxt"
                 android:layout_row="1"
                 android:layout_column="0"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/background_dark" />
         </LinearLayout>
 
         <LinearLayout
@@ -92,7 +93,8 @@
                 android:id="@+id/wizardTxt"
                 android:layout_row="1"
                 android:layout_column="1"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/background_dark" />
         </LinearLayout>
     </LinearLayout>
 
@@ -131,7 +133,8 @@
                 android:id="@+id/archerTxt"
                 android:layout_row="3"
                 android:layout_column="0"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/background_dark" />
         </LinearLayout>
 
         <LinearLayout
@@ -163,7 +166,8 @@
                 android:id="@+id/fighterTxt"
                 android:layout_row="3"
                 android:layout_column="1"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/background_dark" />
         </LinearLayout>
 
     </LinearLayout>
