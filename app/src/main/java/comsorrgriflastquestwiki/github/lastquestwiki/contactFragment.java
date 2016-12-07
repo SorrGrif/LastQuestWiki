@@ -41,6 +41,7 @@ public class contactFragment extends Fragment {
 
 
     private EditText fromTxt;
+
     private EditText subjectTxt;
     private EditText bodyTxt;
     private Animation shake;
@@ -89,14 +90,8 @@ public class contactFragment extends Fragment {
         shake = AnimationUtils.loadAnimation(getActivity(), R.anim.shake);
 
         //init all textfields from contact form
-        fromTxt = (EditText) view.findViewById(R.id.fromTxtField);
         subjectTxt = (EditText) view.findViewById(R.id.subjectTxtField);
         bodyTxt = (EditText) view.findViewById(R.id.bodyTxtField);
-
-        //setting hints for the textfields so end user knows what to enter
-        fromTxt.setHint("From");
-        subjectTxt.setHint("Subject");
-        bodyTxt.setHint("Message");
 
         //init the buttons
         Button sendBtn = (Button) view.findViewById(R.id.emailButton);
@@ -108,43 +103,20 @@ public class contactFragment extends Fragment {
         sendBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //get the string entered from the from textfield
-                String from = fromTxt.getText().toString();
+                //get text from the subject field and body field
+                String subject = subjectTxt.getText().toString();
+                String body = bodyTxt.getText().toString();
 
-                //declare booleans hasAt and hasDot to validate it is
-                //a valid email address
-                //eg. youremail@somesite.com <- valid email
-                //    youremailsomesite.com <- not valid
-                boolean hasAt = false;
-                boolean hasDot = false;
-
-                //substring through the string to find the @ and .
-                //and set hasAt and hasDot to true if found
-                for(int i = 0; i < from.length(); i++) {
-                    if (from.substring(i, i + 1).equals("@")) hasAt = true;
-                    if (from.substring(i, i + 1).equals(".")) hasDot = true;
-                }
-
-                //if either hasAt or hasDot is false shake the textifeld to notify
-                //the email address was incorrect
-                if(!hasAt || !hasDot)
-                {
-                    fromTxt.startAnimation(shake);
-                }
+                //if the subject field is empty shake the text field
+                if(subject.equals("")) subjectTxt.startAnimation(shake);
+                //if the body field is empty shake the body field
+                else if(body.equals("")) bodyTxt.startAnimation(shake);
                 else
                 {
-                    //get text from the subject field and body field
-                    String subject = subjectTxt.getText().toString();
-                    String body = bodyTxt.getText().toString();
-
-                    //set default text if body and subject are empty
-                    if(subject.equals("")) subject = "Question about Last Quest Wiki app";
-                    if(body.equals("")) body = "My question about Last Quest Wiki app is...";
-
                     //send the email
                     Intent intent = new Intent(Intent.ACTION_SENDTO);
                     intent.setData(Uri.parse("mailto:"));
-                    intent.putExtra(Intent.EXTRA_EMAIL, new String[] {from});
+                    intent.putExtra(Intent.EXTRA_EMAIL, new String[] {"LastQuestWikiTeam@LastQuestWiki.com"});
                     intent.putExtra(Intent.EXTRA_SUBJECT, subject);
                     intent.putExtra(Intent.EXTRA_TEXT, body);
                     if (intent.resolveActivity(getActivity().getPackageManager()) != null) {

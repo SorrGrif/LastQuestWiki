@@ -1,0 +1,159 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="comsorrgriflastquestwiki.github.lastquestwiki.classesFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/classesLayout">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/topHalfLayout">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:layout_weight="1"
+                android:id="@+id/barbarianLayout">
+
+                <ImageView
+                    android:layout_width="@dimen/raceImgSize"
+                    android:layout_height="@dimen/raceImgSize"
+                    android:id="@+id/barbarianImg"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:src="@drawable/barbarian"
+                    android:longClickable="false"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/image_border" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/barbarianLbl"
+                    android:id="@+id/barbarianTxt"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:layout_weight="1"
+                android:id="@+id/wizardLayout">
+
+                <ImageView
+                    android:layout_width="@dimen/raceImgSize"
+                    android:layout_height="@dimen/raceImgSize"
+                    android:id="@+id/wizardImg"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:src="@drawable/wizard"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="0dp"
+                    android:background="@drawable/image_border" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wizardLbl"
+                    android:id="@+id/wizardTxt"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/bottomHalfLayout">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:layout_weight="1"
+                android:id="@+id/archerLayout">
+
+                <ImageView
+                    android:layout_width="@dimen/raceImgSize"
+                    android:layout_height="@dimen/raceImgSize"
+                    android:id="@+id/archerImg"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:src="@drawable/archer"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/image_border" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/archerLbl"
+                    android:id="@+id/archerTxt"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:layout_weight="1"
+                android:id="@+id/fighterLayout">
+
+                <ImageView
+                    android:layout_width="@dimen/raceImgSize"
+                    android:layout_height="@dimen/raceImgSize"
+                    android:id="@+id/fighterImg"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:src="@drawable/fighter"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="0dp"
+                    android:background="@drawable/image_border" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fighterLbl"
+                    android:id="@+id/fighterTxt"
+                    android:layout_row="3"
+                    android:layout_column="1"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

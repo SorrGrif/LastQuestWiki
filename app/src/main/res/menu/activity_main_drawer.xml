@@ -3,9 +3,15 @@
 
     <group android:checkableBehavior="single">
 
+
+        <item
+            android:id="@+id/nav_welcome"
+            android:icon="@drawable/ic_account_balance_black_24dp"
+            android:title="Home" />
+
         <item
             android:id="@+id/nav_classes"
-            android:icon="@drawable/ic_group_black_24dp"
+            android:icon="@drawable/ic_account_circle_black_24dp"
             android:title="Classes" />
 
         <item
@@ -17,10 +23,6 @@
             android:id="@+id/nav_items"
             android:icon="@drawable/ic_build_black_24dp"
             android:title="Items" />
-        <item
-            android:id="@+id/nav_puzzle"
-            android:icon="@drawable/ic_school_black_24dp"
-            android:title="Puzzle Solver" />
         <item
             android:id="@+id/nav_faq"
             android:icon="@drawable/ic_poll_black_24dp"

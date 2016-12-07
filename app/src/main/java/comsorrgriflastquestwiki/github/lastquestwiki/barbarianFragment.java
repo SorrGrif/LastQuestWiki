@@ -1,6 +1,8 @@
 package comsorrgriflastquestwiki.github.lastquestwiki;
 
 import android.content.Context;
+import android.content.res.Configuration;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,6 +12,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+
+import java.util.Locale;
 
 
 /**
@@ -62,6 +66,13 @@ public class barbarianFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+        if(savedInstanceState != null)
+        {
+            String lang = savedInstanceState.getString("lang");
+            getResources().getConfiguration().locale = new Locale(lang);
+            getResources().updateConfiguration(getResources().getConfiguration(), getResources().getDisplayMetrics());
+        }
     }
 
     @Override
@@ -75,7 +86,7 @@ public class barbarianFragment extends Fragment {
         fm = getActivity().getSupportFragmentManager();
 
         //when the human image is clicked
-        //start an animation 
+        //start an animation
         //and change the current frame to the human frame
         human.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,7 +100,7 @@ public class barbarianFragment extends Fragment {
         });
 
         //when the dwarf image is clicked
-        //start an animation 
+        //start an animation
         //and change the current frame to the dwarf frame
         dwarf.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -143,4 +154,13 @@ public class barbarianFragment extends Fragment {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        Locale c = getResources().getConfiguration().locale;
+        outState.putString("lang", c.getLanguage());
+        super.onSaveInstanceState(outState);
+    }
+
+
 }

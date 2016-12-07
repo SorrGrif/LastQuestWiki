@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
-        sha1="be85b158b2a13b70f565eb8266d1ba55f1feb5c4">
+        sha1="a37f834cb15f970ef564370ff46316de558734ec">
         <dex dex="E:\LastQuestWiki\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_2af04051eea84521034ce05350e66b2ec390c4ad\classes.dex" />
     </item>
     <item
@@ -52,7 +52,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.2"
-        sha1="a9ac2e9f78151238a0e978903ea442f3b97386d3">
+        sha1="a9795612a7970de5183ac5e7a266ed8afcd3b975">
         <dex dex="E:\LastQuestWiki\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7615e5026879245e9cead263541de7e5efacf85d\classes.dex" />
     </item>
     <item
