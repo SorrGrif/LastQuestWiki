@@ -69,10 +69,14 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        fm = getSupportFragmentManager();
-        FragmentTransaction tran = fm.beginTransaction();
-        tran.replace(R.id.mainFrame, new welcomeFragment());
-        tran.commit();
+        //if theres no saved instant state, set to the default welcome frag
+        //this makes it so when you rotate device it doesnt reset to the default frag
+        if(savedInstanceState == null) {
+            fm = getSupportFragmentManager();
+            FragmentTransaction tran = fm.beginTransaction();
+            tran.replace(R.id.mainFrame, new welcomeFragment());
+            tran.commit();
+        }
     }
 
     @Override
