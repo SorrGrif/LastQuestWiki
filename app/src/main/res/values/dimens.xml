@@ -9,4 +9,5 @@
     <dimen name="buttonPadding">10dp</dimen>
     <dimen name="raceImgSize">150dp</dimen>
     <dimen name="classPadding">5dp</dimen>
+    <dimen name="racePadding">5dp</dimen>
 </resources>

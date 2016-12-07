@@ -9,14 +9,15 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/dwarfLayout">
+        android:layout_height="wrap_content"
+        android:id="@+id/dwarfLayout"
+        android:padding="@dimen/racePadding">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Dwarf"
+            android:text="@string/dwarfLbl"
             android:id="@+id/dwarfLbl"
             android:layout_gravity="center_horizontal" />
 
@@ -31,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Description"
+            android:text="@string/descriptionLbl"
             android:id="@+id/descriptionLbl"
             android:layout_gravity="center_horizontal" />
 
@@ -49,14 +50,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Base Stats"
+            android:text="@string/baseStatsLbl"
             android:id="@+id/baseStatsLbl"
             android:layout_gravity="center_horizontal" />
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent"
+            android:id="@+id/statLayout">
 
 
             <TableLayout
@@ -72,7 +74,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Strength"
+                        android:text="@string/strengthLbl"
                         android:id="@+id/strTxt" />
                 </TableRow>
 
@@ -84,7 +86,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Dexterity"
+                        android:text="@string/dexterityLbl"
                         android:id="@+id/dexTxt" />
                 </TableRow>
 
@@ -96,7 +98,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Constitution"
+                        android:text="@string/constitutionLbl"
                         android:id="@+id/conTxt" />
                 </TableRow>
 
@@ -108,7 +110,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Intelligence"
+                        android:text="@string/intelligenceLbl"
                         android:id="@+id/intTxt" />
                 </TableRow>
 
@@ -120,7 +122,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Wisdom"
+                        android:text="@string/wisdomLbl"
                         android:id="@+id/wisTxt" />
                 </TableRow>
 
@@ -132,7 +134,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Charisma"
+                        android:text="@string/charismaLbl"
                         android:id="@+id/chaTxt" />
                 </TableRow>
 
@@ -227,7 +229,8 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:id="@+id/playableClassesLayout">
 
             <LinearLayout
                 android:orientation="vertical"
@@ -252,7 +255,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Fighter"
+                    android:text="@string/fighterLbl"
                     android:id="@+id/fighterLbl"
                     android:layout_row="3"
                     android:layout_column="0"
@@ -282,7 +285,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Barbarian"
+                    android:text="@string/barbarianLbl"
                     android:id="@+id/barbarianLbl"
                     android:layout_row="3"
                     android:layout_column="0"
