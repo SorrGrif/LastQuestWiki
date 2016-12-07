@@ -8,21 +8,14 @@
             android:id="@+id/nav_welcome"
             android:icon="@drawable/ic_account_balance_black_24dp"
             android:title="Home" />
-
         <item
             android:id="@+id/nav_classes"
             android:icon="@drawable/ic_account_circle_black_24dp"
             android:title="Classes" />
-
         <item
             android:id="@+id/nav_races"
             android:icon="@drawable/ic_group_black_24dp"
             android:title="Races" />
-
-        <item
-            android:id="@+id/nav_items"
-            android:icon="@drawable/ic_build_black_24dp"
-            android:title="Items" />
         <item
             android:id="@+id/nav_faq"
             android:icon="@drawable/ic_poll_black_24dp"
@@ -31,10 +24,6 @@
             android:id="@+id/nav_tips"
             android:icon="@drawable/ic_announcement_black_24dp"
             android:title="Tips" />
-        <item
-            android:id="@+id/nav_tutorials"
-            android:icon="@drawable/ic_play_arrow_black_24dp"
-            android:title="Tutorials" />
         <item
             android:id="@+id/nav_contact"
             android:icon="@drawable/ic_question_answer_black_24dp"
