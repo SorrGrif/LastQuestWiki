@@ -11,44 +11,38 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Contact Information"
-        android:id="@+id/textView3"
+        android:text="@string/contactUsLbl"
+        android:id="@+id/contactUsLbl"
         android:layout_gravity="center_horizontal" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Send us an Email"
-        android:id="@+id/textView4"
+        android:text="@string/sendUsEmailLbl"
+        android:id="@+id/sendEmailLbl"
         android:layout_gravity="center_horizontal" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/fromTxtField"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/subjectTxtField"
         android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp" />
+        android:layout_marginRight="40dp"
+        android:hint="@string/subjectHint" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/bodyTxtField"
         android:layout_marginRight="40dp"
-        android:layout_marginLeft="40dp" />
+        android:layout_marginLeft="40dp"
+        android:hint="@string/messageHint" />
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Send Email"
+        android:text="@string/sendEmailBtnLbl"
         android:id="@+id/emailButton"
         android:layout_gravity="center_horizontal"
         android:layout_marginLeft="@dimen/buttonPadding"
@@ -57,7 +51,7 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="add to contact"
+        android:text="@string/addContactBtnLbl"
         android:id="@+id/contactButton"
         android:layout_gravity="center_horizontal"
         android:layout_marginLeft="@dimen/buttonPadding"
@@ -66,7 +60,7 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="visit our website"
+        android:text="@string/visitWebsiteBtnLbl"
         android:id="@+id/websiteButton"
         android:layout_gravity="center_horizontal"
         android:layout_marginLeft="@dimen/buttonPadding"
@@ -75,7 +69,7 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="View on map"
+        android:text="@string/viewMapBtnLbl"
         android:id="@+id/mapButton"
         android:layout_gravity="center_horizontal"
         android:layout_marginLeft="@dimen/buttonPadding"
