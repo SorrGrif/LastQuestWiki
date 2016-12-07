@@ -143,17 +143,11 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_classes) {
             tran.replace(R.id.mainFrame, new classesFragment());
             tran.commit();
-        }else if (id == R.id.nav_items) {
-            tran.replace(R.id.mainFrame, new itemsFragment());
-            tran.commit();
         }else if (id == R.id.nav_faq) {
             tran.replace(R.id.mainFrame, new faqFragment());
             tran.commit();
         }else if (id == R.id.nav_tips) {
             tran.replace(R.id.mainFrame, new tipsFragment());
-            tran.commit();
-        } else if (id == R.id.nav_tutorials) {
-            tran.replace(R.id.mainFrame, new tutorialFragment());
             tran.commit();
         }
 
