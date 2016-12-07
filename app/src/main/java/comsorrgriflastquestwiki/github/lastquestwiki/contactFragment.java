@@ -1,6 +1,8 @@
 package comsorrgriflastquestwiki.github.lastquestwiki;
 
 import android.content.Context;
+import android.net.Uri;
+import android.os.Bundle;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
@@ -11,10 +13,12 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
+
 
 
 /**
@@ -34,6 +38,9 @@ public class contactFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+
+    private EditText fromTxt;
 
     private EditText subjectTxt;
     private EditText bodyTxt;
@@ -221,8 +228,10 @@ public class contactFragment extends Fragment {
         void onFragmentInteraction(Uri uri);
     }
 
+
     private void sendEmail(String from, String subject, String body)
     {
 
     }
+
 }

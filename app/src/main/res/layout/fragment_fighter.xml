@@ -20,7 +20,10 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/fighterLbl"
             android:id="@+id/fighterLbl"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="monospace"
+            android:textStyle="normal|bold"
+            android:textSize="14sp" />
 
         <ImageView
             android:layout_width="fill_parent"
@@ -35,7 +38,10 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/descriptionLbl"
             android:id="@+id/descriptionLbl"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="monospace"
+            android:textStyle="normal|bold"
+            android:textSize="14sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -45,7 +51,11 @@
             android:id="@+id/descriptionTxt"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp" />
+            android:layout_marginRight="5dp"
+            android:fontFamily="monospace"
+            android:textStyle="normal|bold"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimaryDark" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -53,7 +63,10 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/baseTraitsLbl"
             android:id="@+id/baseTraitLbl"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="monospace"
+            android:textStyle="normal|bold"
+            android:textSize="14sp" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -76,7 +89,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/soloAbilityLbl"
-                        android:id="@+id/soloAbTxt" />
+                        android:id="@+id/soloAbTxt"
+                        android:fontFamily="monospace"
+                        android:textStyle="normal|bold"
+                        android:textSize="14sp" />
                 </TableRow>
 
                 <TableRow
@@ -88,7 +104,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/defenseRatingLbl"
-                        android:id="@+id/defenseRatTxt" />
+                        android:id="@+id/defenseRatTxt"
+                        android:fontFamily="monospace"
+                        android:textStyle="normal|bold"
+                        android:textSize="14sp" />
                 </TableRow>
 
                 <TableRow
@@ -100,7 +119,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/damageRatingLbl"
-                        android:id="@+id/damageRatTxt" />
+                        android:id="@+id/damageRatTxt"
+                        android:fontFamily="monospace"
+                        android:textStyle="normal|bold"
+                        android:textSize="14sp" />
                 </TableRow>
 
                 <TableRow
@@ -112,7 +134,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/notableTraitLbl"
-                        android:id="@+id/notableTrTxt" />
+                        android:id="@+id/notableTrTxt"
+                        android:fontFamily="monospace"
+                        android:textStyle="normal|bold"
+                        android:textSize="14sp" />
                 </TableRow>
 
             </TableLayout>
@@ -131,7 +156,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/highLbl"
-                        android:id="@+id/soloAbStat" />
+                        android:id="@+id/soloAbStat"
+                        android:fontFamily="monospace"
+                        android:textStyle="normal|bold"
+                        android:textSize="14sp" />
                 </TableRow>
 
                 <TableRow
@@ -143,7 +171,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/veryHighOrAverageLbl"
-                        android:id="@+id/defenseRatStat" />
+                        android:id="@+id/defenseRatStat"
+                        android:fontFamily="monospace"
+                        android:textStyle="normal|bold"
+                        android:textSize="14sp" />
                 </TableRow>
 
                 <TableRow
@@ -155,7 +186,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/highOrLowLbl"
-                        android:id="@+id/damageRatStat" />
+                        android:id="@+id/damageRatStat"
+                        android:fontFamily="monospace"
+                        android:textStyle="normal|bold"
+                        android:textSize="14sp" />
                 </TableRow>
 
                 <TableRow
@@ -167,7 +201,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/fighterNotableTraitsLbl"
-                        android:id="@+id/notableTrStat" />
+                        android:id="@+id/notableTrStat"
+                        android:fontFamily="monospace"
+                        android:textStyle="normal|bold"
+                        android:textSize="14sp" />
                 </TableRow>
 
             </TableLayout>
@@ -179,7 +216,11 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/playableRaces"
             android:id="@+id/avRacesLbl"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="monospace"
+            android:textStyle="normal|bold"
+            android:textSize="14sp"
+            android:textColor="@android:color/background_dark" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -214,7 +255,11 @@
                     android:id="@+id/elfLbl"
                     android:layout_row="3"
                     android:layout_column="0"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="monospace"
+                    android:textStyle="normal|bold"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/background_dark" />
             </LinearLayout>
 
             <LinearLayout
@@ -244,7 +289,11 @@
                     android:id="@+id/dwarfLbl"
                     android:layout_row="3"
                     android:layout_column="0"
-                    android:layout_gravity="center_horizontal" />
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="monospace"
+                    android:textStyle="normal|bold"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/background_dark" />
             </LinearLayout>
         </LinearLayout>
 

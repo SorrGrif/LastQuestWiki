@@ -15,10 +15,11 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 
+
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link faqFragment.OnFragmentInteractionListener} interface
+ *
  * to handle interaction events.
  * Use the {@link faqFragment#newInstance} factory method to
  * create an instance of this fragment.
@@ -32,6 +33,7 @@ public class faqFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
     TextView faqFragmentTextView;
     ListView list;
 
@@ -72,14 +74,21 @@ public class faqFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+
+
+
+            //Calls the faqitem
+            //Gets the id from the faq fragment
+            //When clicked it displays the answers
         View view = inflater.inflate(R.layout.fragment_faq, container, false);
-        faqFragmentTextView = (TextView) view.findViewById(R.id.answer);
+        faqFragmentTextView = (TextView) view.findViewById(R.id.questions);
         list = (ListView) view.findViewById(R.id.answers);
         final ArrayList<FaqItem> FaqItemList = new ArrayList<>();
-        FaqItemList.add(new FaqItem("How do I solve this?", "Move to the right and spin 180 degrees"));
-        FaqItemList.add(new FaqItem("How do I equip my weapons?", "Go to the menu option and choose weapons."));
-        FaqItemList.add(new FaqItem("How do I change classes", "You are only allowed to start with a default class, however once you reach lvl25 you will unlock a new class"));
-        FaqItemList.add(new FaqItem("Can I change my name?", "You can only keep the name you chose when you started."));
+        FaqItemList.add(new FaqItem("Move to the right and spin 180 degrees", "How do i open the door in raid III?"));
+        FaqItemList.add(new FaqItem("Go to the menu option and choose weapons.", "How do I equip my weapons?"));
+        FaqItemList.add(new FaqItem("Go to the main menu and choose the option classes", "How do I change classes?"));
+        FaqItemList.add(new FaqItem("Yes you can!", "Can I change my name?"));
 
 
         ArrayAdapter adapter = new ArrayAdapter(getContext(), android.R.layout.simple_list_item_1, FaqItemList);
@@ -90,7 +99,7 @@ public class faqFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                FaqItem item = (FaqItem) list.getItemAtPosition(position);
-                faqFragmentTextView.setText(item.getAnswer());
+                faqFragmentTextView.setText(item.getQuestion());
             }
         });
 
@@ -117,6 +126,7 @@ public class faqFragment extends Fragment {
             return convertView;
         }
     }
+
 
 
 

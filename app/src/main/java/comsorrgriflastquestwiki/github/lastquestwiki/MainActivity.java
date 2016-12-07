@@ -30,18 +30,19 @@ public class MainActivity extends AppCompatActivity
         puzzleFragment.OnFragmentInteractionListener,
         tutorialFragment.OnFragmentInteractionListener,
         tipsFragment.OnFragmentInteractionListener,
-        tipContentFragment.OnFragmentInteractionListener,
         itemsFragment.OnFragmentInteractionListener,
         humanFragment.OnFragmentInteractionListener,
         elfFragment.OnFragmentInteractionListener,
         dwarfFragment.OnFragmentInteractionListener,
         hobbitFragment.OnFragmentInteractionListener,
+        tipContentFragment.OnFragmentInteractionListener,
         archerFragment.OnFragmentInteractionListener,
         barbarianFragment.OnFragmentInteractionListener,
         wizardFragment.OnFragmentInteractionListener,
         fighterFragment.OnFragmentInteractionListener,
         welcomeFragment.OnFragmentInteractionListener,
         languageFragment.OnFragmentInteractionListener{
+
 
 
     FragmentManager fm;

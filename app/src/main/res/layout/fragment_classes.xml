@@ -1,3 +1,20 @@
+<!--
+
+/<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="comsorrgriflastquestwiki.github.lastquestwiki.classesFragment">
+
+    &lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment" />
+
+</FrameLayout>
+-->
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -43,7 +60,8 @@
                 android:id="@+id/barbarianTxt"
                 android:layout_row="1"
                 android:layout_column="0"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/background_dark" />
         </LinearLayout>
 
         <LinearLayout
@@ -74,7 +92,8 @@
                 android:id="@+id/wizardTxt"
                 android:layout_row="1"
                 android:layout_column="1"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/background_dark" />
         </LinearLayout>
     </LinearLayout>
 
@@ -113,7 +132,8 @@
                 android:id="@+id/archerTxt"
                 android:layout_row="3"
                 android:layout_column="0"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/background_dark" />
         </LinearLayout>
 
         <LinearLayout
@@ -144,9 +164,11 @@
                 android:id="@+id/fighterTxt"
                 android:layout_row="3"
                 android:layout_column="1"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/background_dark" />
         </LinearLayout>
 
     </LinearLayout>
 
 </LinearLayout>
+
