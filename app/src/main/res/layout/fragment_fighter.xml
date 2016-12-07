@@ -219,7 +219,8 @@
             android:layout_gravity="center_horizontal"
             android:fontFamily="monospace"
             android:textStyle="normal|bold"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:textColor="@android:color/background_dark" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -257,7 +258,8 @@
                     android:layout_gravity="center_horizontal"
                     android:fontFamily="monospace"
                     android:textStyle="normal|bold"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:textColor="@android:color/background_dark" />
             </LinearLayout>
 
             <LinearLayout
@@ -290,7 +292,8 @@
                     android:layout_gravity="center_horizontal"
                     android:fontFamily="monospace"
                     android:textStyle="normal|bold"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:textColor="@android:color/background_dark" />
             </LinearLayout>
         </LinearLayout>
 

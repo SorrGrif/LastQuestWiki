@@ -22,9 +22,9 @@
             android:id="@+id/wizardLbl"
             android:layout_gravity="center_horizontal"
             android:textStyle="normal|bold"
-            android:textColor="@color/colorAccent"
             android:fontFamily="monospace"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_purple" />
 
         <ImageView
             android:layout_width="fill_parent"
@@ -41,9 +41,9 @@
             android:id="@+id/descriptionLbl"
             android:layout_gravity="center_horizontal"
             android:textStyle="normal|bold"
-            android:textColor="@color/colorAccent"
             android:fontFamily="monospace"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_purple" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -55,9 +55,9 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:textStyle="normal|bold"
-            android:textColor="@color/colorAccent"
             android:fontFamily="monospace"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_purple" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -67,9 +67,9 @@
             android:id="@+id/baseTraitLbl"
             android:layout_gravity="center_horizontal"
             android:textStyle="normal|bold"
-            android:textColor="@color/colorAccent"
             android:fontFamily="monospace"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_purple" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -222,7 +222,8 @@
             android:layout_gravity="center_horizontal"
             android:textStyle="normal|bold"
             android:fontFamily="monospace"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            android:textColor="@android:color/background_dark" />
 
         <LinearLayout
             android:orientation="horizontal"
@@ -260,7 +261,8 @@
                     android:layout_gravity="center_horizontal"
                     android:textStyle="normal|bold"
                     android:fontFamily="monospace"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:textColor="@android:color/background_dark" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

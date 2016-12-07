@@ -21,7 +21,8 @@
             android:id="@+id/dwarfLbl"
             android:layout_gravity="center_horizontal"
             android:textStyle="normal|bold"
-            android:fontFamily="monospace" />
+            android:fontFamily="monospace"
+            android:textColor="@android:color/background_dark" />
 
         <ImageView
             android:layout_width="fill_parent"
